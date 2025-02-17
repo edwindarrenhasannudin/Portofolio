@@ -17,12 +17,17 @@
         
         <!-- Favicon -->
         <link rel="icon" href="assets/favicon.ico">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     </head>
     
 <body>
     <!-- Header Section -->
     <header class="header">
         <a href="#" class="logo">Edwin.</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <!-- Navigation Menu -->
         <nav class="navbar">
@@ -38,23 +43,33 @@
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I'm Edwin Darren H</h1> 
-            <h3>Informatics Engineering Student</h3>
-            <p>Saya berkuliah di <u>Institut Teknologi Sumatera</u> dan saat ini berada di semester 3. Selama perkuliahan, saya aktif mengikuti beberapa organisasi kampus serta kegiatan perkaderan untuk memperluas jaringan dan meningkatkan kemampuan komunikasi saya.</p>
+            <h3 class=".multiple-text">Informatics Engineering Student</h3>
+            <p>Saya berkuliah di <u>Institut Teknologi Sumatera</u> dan saat ini berada di semester 6. Selama perkuliahan, saya aktif mengikuti beberapa organisasi kampus serta kegiatan perkaderan untuk memperluas jaringan dan meningkatkan kemampuan komunikasi saya.</p>
             
             <!-- Call to Action Buttons -->
             <div class="btn-box">
                 <a href="#contact">Hire Me</a>
                 <a href="#contact">Let's Talk</a>
             </div>
+            
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://t.me/Edwin_Hasannudin"
+                target="_blank"><i class='bx bxl-telegram'></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=edwin.122140111@student.itera.ac.id"
+                target="_blank"><i class='bx bxl-gmail'></i></a>
+                <a href="https://tiktok.com/@edw.darren" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://github.com/edwindarrenhasannudin" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/edw.darren" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://facebook.com/edwin.d.hasanudin" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/edwin-darren-hasannudin-13b768324/" 
+                target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://youtube.com/@edwindarren8409" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://wa.me/6282162175970" 
+                target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
         </div>
-
-        <!-- Social Media Links -->
-        <div class="home-sci">
-            <a href="https://github.com/edwindarrenhasannudin" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/edw.darren" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
-        </div>
-        
         <!-- Profile Image -->
         <div class="home-img">
             <img src="assets/Edwin.png" alt="Edwin Darren H's Profile Picture">
@@ -87,14 +102,14 @@
                 <p>Membangun situs web responsif dan dinamis dengan teknologi terbaru sesuai kebutuhan klien.</p>
             </div>
             <div class="service-box">
+                <i class='bx bx-palette'></i>
+                <h3>UI / UX Design</h3>
+                <p>Merancang antarmuka dan pengalaman pengguna untuk memastikan interaksi yang intuitif, efisien, dan menarik dalam penggunaan produk digital.</p>
+            </div>
+            <div class="service-box">
                 <i class='bx bx-mobile'></i>
                 <h3>Mobile App Development</h3>
                 <p>Mengembangkan aplikasi mobile yang user-friendly dengan desain menarik dan performa tinggi.</p>
-            </div>
-            <div class="service-box">
-                <i class='bx bx-data'></i>
-                <h3>Data Analysis</h3>
-                <p>Menganalisis data untuk menghasilkan informasi yang dapat digunakan dalam pengambilan keputusan bisnis yang strategis.</p>
             </div>
         </div>
     </section>
@@ -138,7 +153,27 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
+        
+        <!-- Footer Design -->
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by Edwin Darren Hasannudin || All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
     </section>    
 
+    <!-- Scroll Reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
 </body>
 </html>
