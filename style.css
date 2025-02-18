@@ -472,7 +472,7 @@ section {
 
 /* Portfolio Section */
 .portfolio {
-  height: 100vh;
+  height: 150vh;
   padding: 100px 10%;
   background-color: #0f435a;
   color: #ededed;
@@ -499,21 +499,25 @@ section {
 
 .portfolio-info {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  width: 100%; 
+  height: 25vh;
+  bottom: 7px;
+  /* left: 10px; */
+  background:#081b29;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .portfolio-info h3 {
   margin: 0;
   color: #00abf0;
+  text-align: center;
 }
 
 .portfolio-info p {
   margin-top: 5px;
   color: #ededed;
+  text-align: center;
 }
 
 /* Contact Section */
@@ -687,7 +691,7 @@ button:hover {
   }
 
   .about {
-    height: 110vh;
+    height: 100vh;
   }
 
   .about-content {
@@ -711,6 +715,25 @@ button:hover {
 
   .service-box {
     width: 100%;
+  }
+
+  .portfolio {
+    height: 100%;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    width: 100%; 
+    height: 14vh;
+    background:#081b29;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .portfolio-container {
@@ -771,7 +794,30 @@ button:hover {
     height: 100px;
   }
 
-  
+  .portfolio {
+    height: 130vh;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    width: 100%; 
+    height: 18vh;
+    /* left: 10px; */
+    background:#081b29;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .services {
+    height: 140vh;
+  }
+
   .service-box {
     padding: 1.5rem;
   }
@@ -818,5 +864,25 @@ button:hover {
 
   .services {
     height: 210vh;
+  }
+
+  .portfolio {
+    height: 210vh;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    width: 100%; 
+    height: 20vh;
+    /* left: 10px; */
+    background:#081b29;
+    padding: 10px;
+    border-radius: 10px;
   }
 }
