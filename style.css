@@ -497,15 +497,21 @@ section {
   border-radius: 10px;
 }
 
-.portfolio-info {
+.portfolio-item .portfolio-info {
   position: absolute;
   width: 100%; 
-  height: 25vh;
-  bottom: 7px;
-  /* left: 10px; */
-  background:#081b29;
+  height: 26vh;
+  bottom: 0;
+  left: 0; 
+  background: #081b29;
+  text-align: center;
   padding: 10px;
   border-radius: 10px;
+}
+
+.portfolio-info i {
+  font-size: 1rem;
+  color: #00abf0;
 }
 
 .portfolio-info h3 {
@@ -599,12 +605,57 @@ button:hover {
     font-size: 90%;
   }
 
-  .home-content h1 {
-    font-size: 2.5rem;
+  .home {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px; 
   }
 
   .home-content p {
     font-size: 1rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .home-img img {
+    width: 60vw;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio {
+    height: 100%;
+  }
+
+  .portfolio-item {
+    position: relative;
+  }
+
+  .portfolio-item img {
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+  .portfolio-item .portfolio-info {
+    position: absolute;
+    width: 100%; 
+    height: 14vh;
+    background:#081b29;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contact-container {
+    padding-top: 100px;
   }
 }
 
@@ -667,6 +718,7 @@ button:hover {
   }
 
   .home {
+    margin-top: 0;
     flex-direction: column;
     text-align: center;
     height: 115vh;
@@ -721,16 +773,18 @@ button:hover {
     height: 100%;
   }
 
+  .portfolio-item {
+    position: relative;
+  }
+
   .portfolio-item img {
-    width: 100%;
-    height: 95%;
     border-radius: 10px;
   }
 
-  .portfolio-info {
+  .portfolio-item .portfolio-info {
     position: absolute;
     width: 100%; 
-    height: 14vh;
+    height: 16vh;
     background:#081b29;
     padding: 10px;
     border-radius: 10px;
@@ -756,6 +810,34 @@ button:hover {
     margin-top: 4rem;
   }
 }
+
+@media (max-width:540px) {
+  .home {
+      height: 200%;
+  }
+
+  .about {
+    height: 110vh;
+  }
+
+  .about-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    width: 100%; 
+    height: 24vh;
+    background:#081b29;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .services {
+    height: 180vh;
+  }
+} 
 
 /* Mobile: 480px ke bawah */
 @media (max-width: 480px) {
@@ -794,23 +876,15 @@ button:hover {
     height: 100px;
   }
 
-  .portfolio {
-    height: 130vh;
+  .portfolio-item {
+    position: relative;
   }
 
-  .portfolio-item img {
-    width: 100%;
-    height: 95%;
-    border-radius: 10px;
-  }
-
-  .portfolio-info {
+  .portfolio-item .portfolio-info {
     position: absolute;
     width: 100%; 
-    height: 18vh;
-    /* left: 10px; */
-    background:#081b29;
-    padding: 10px;
+    height: 12vh; 
+    background: #081b29;
     border-radius: 10px;
   }
 
@@ -867,19 +941,21 @@ button:hover {
   }
 
   .portfolio {
-    height: 210vh;
+    height: 310vh;
   }
 
+  .portfolio-item {
+    position: relative;
+  }
+  
   .portfolio-item img {
-    width: 100%;
-    height: 95%;
     border-radius: 10px;
   }
-
-  .portfolio-info {
+  
+  .portfolio-item .portfolio-info {
     position: absolute;
     width: 100%; 
-    height: 20vh;
+    height: auto;
     /* left: 10px; */
     background:#081b29;
     padding: 10px;
