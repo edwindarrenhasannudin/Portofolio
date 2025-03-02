@@ -472,7 +472,7 @@ section {
 
 /* Portfolio Section */
 .portfolio {
-  height: 150vh;
+  height: 255vh;
   padding: 100px 10%;
   background-color: #0f435a;
   color: #ededed;
@@ -490,40 +490,29 @@ section {
 
 .portfolio-item {
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-item img {
   width: 100%;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .portfolio-item .portfolio-info {
   position: absolute;
-  width: 100%; 
-  height: 26vh;
-  bottom: 0;
-  left: 0; 
+  width: 100%;
+  bottom: -100%; /* Sembunyikan info awalnya */
+  left: 0;
   background: #081b29;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  transition: bottom 0.3s ease;
 }
 
-.portfolio-info i {
-  font-size: 1rem;
-  color: #00abf0;
-}
-
-.portfolio-info h3 {
-  margin: 0;
-  color: #00abf0;
-  text-align: center;
-}
-
-.portfolio-info p {
-  margin-top: 5px;
-  color: #ededed;
-  text-align: center;
+.portfolio-item:hover .portfolio-info {
+  bottom: 0; /* Tampilkan info saat hover */
 }
 
 /* Contact Section */
@@ -941,17 +930,42 @@ button:hover {
   }
 
   .portfolio {
-    height: 310vh;
+    height: auto; /* Ubah ke auto agar tinggi menyesuaikan konten */
+    padding: 50px 10%; /* Kurangi padding agar lebih responsif */
+  }
+
+  .portfolio h2 {
+    text-align: center; /* Tengahkan judul */
+    padding-bottom: 20px;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsif */
+    gap: 30px; /* Jarak antar item */
   }
 
   .portfolio-item {
-    position: relative;
+    display: flex;
+    flex-direction: column; /* Gambar di atas, info di bawah */
+    align-items: center; /* Pusatkan konten secara horizontal */
+    text-align: center; /* Teks rata tengah */
   }
   
   .portfolio-item img {
+    width: 100%; /* Gambar mengisi lebar penuh */
+    height: auto; /* Tinggi otomatis sesuai proporsi */
     border-radius: 10px;
   }
-  
+
+  .portfolio-info {
+    margin-top: 15px; /* Jarak antara gambar dan info */
+    background: #081b29;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; /* Info mengisi lebar penuh */
+  }
+
   .portfolio-item .portfolio-info {
     position: absolute;
     width: 100%; 
