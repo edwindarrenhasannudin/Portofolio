@@ -511,6 +511,10 @@ section {
   transition: bottom 0.3s ease;
 }
 
+.portfolio-info h3 {
+  color: #00abf0;
+}
+
 .portfolio-item:hover .portfolio-info {
   bottom: 0; /* Tampilkan info saat hover */
 }
