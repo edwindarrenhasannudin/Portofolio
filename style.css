@@ -13,9 +13,34 @@
 
 :root {
   --bg-color: #081b29; 
-  --snd-bf-color: #081b29; 
+  --snd-bf-color: #0b2b3a; 
+  --thd-bf-color: #0e3b50;
+  --fr-bf-color: #0f435a;  
   --text-color: #ededed; 
+  --snd-text-color: #ccc; 
   --main-color: #00abf0; 
+  --snd-main-color: rgba(0, 0, 0, 0.2);
+  --thd-main-color: rgba(0, 0, 0, 0.4); 
+  --fr-main-color: rgba(0, 0, 0, .2); 
+  --fv-main-color: rgba(0, 0, 0, 2); 
+  --primary-color: #edf2fc; 
+  --secondary-color: #212121;  
+}
+
+.light-theme {
+  --bg-color: #f0f8f0; /* Hijau pastel sangat terang, hampir putih */
+  --snd-bf-color: #e1f0e1; /* Hijau lembut seperti daun muda */
+  --thd-bf-color: #c8e6c9; /* Hijau mint segar */
+  --fr-bf-color: #a5d6a7; /* Hijau zamrud yang lebih jelas */
+  --text-color: #264d2c; /* Hijau tua mendekati hitam untuk teks utama */
+  --snd-text-color: #3e704c; /* Hijau lebih terang untuk teks sekunder */
+  --main-color: #009688; /* Hijau toska, sejuk dan modern */
+  --snd-main-color: rgba(0, 128, 64, 0.2); /* Hijau transparan lembut */
+  --thd-main-color: rgba(0, 100, 50, 0.4); /* Hijau lebih pekat untuk efek bayangan */
+  --fr-main-color: rgba(0, 150, 80, 0.3); /* Hijau segar untuk efek tambahan */
+  --fv-main-color: rgba(0, 128, 0, 0.5); /* Hijau klasik dengan transparansi */
+  --primary-color: #ffffff; /* Putih bersih untuk elemen utama */
+  --secondary-color: #00732d; /* Hijau zamrud tua khas Ramadhan */
 }
 
 html {
@@ -48,7 +73,7 @@ section {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #ededed;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
 }
@@ -60,29 +85,38 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: .4s;
 }
 
 .navbar a {
   font-size: 18px;
-  color: #ededed;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
   transition: .3s;
+  flex: 1;
+  text-align: center;
 }
 
 .navbar a:hover, 
 .navbar a.active {
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 #menu-icon {
   font-size: 3.6rem;
-  color: #00abf0;
+  color: var(--main-color);
   display: none;
+}
+
+#icon {
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  vertical-align: middle; 
 }
 
 .home {
@@ -111,7 +145,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 1s;
 }
@@ -120,7 +154,7 @@ section {
   position: relative;
   font-size: 25px;
   font-weight: 700;
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 .home-content h3::before {
@@ -130,7 +164,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 1.3s;
 }
@@ -149,7 +183,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 }
@@ -169,7 +203,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 1.9s;
   z-index: 2;
@@ -182,11 +216,11 @@ section {
   align-items: center;
   width: 150px;
   height: 100%;
-  background: #081b29;
-  border: 2px solid #00abf0;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
   border-radius: 8px;
   font-size: 19px;
-  color: #00abf0;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -196,20 +230,20 @@ section {
 }
 
 .btn-box a:hover {
-  color: #081b29;
+  color: var(--bg-color);
 }
 
 .btn-box a:nth-child(2) {
-  background: #00abf0;
-  color: #081b29;
+  background: var(--main-color);
+  color: var(--bg-color);
 }
 
 .btn-box a:nth-child(2):hover {
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 .btn-box a:nth-child(2)::before {
-  background: #081b29;
+  background: var(--bg-color);
 }
 
 .btn-box a::before {
@@ -219,7 +253,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: #00abf0;
+  background: var(--main-color);
   z-index: -1;
   transition: .5s;
 }
@@ -244,7 +278,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #081b29;
+  background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 2.5s;
   z-index: 2;
@@ -258,10 +292,10 @@ section {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #00abf0;
+  border: 2px solid var(--main-color);
   border-radius: 50%;
   font-size: 20px;
-  color: #00abf0;
+  color: var(--main-color);
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
@@ -269,7 +303,7 @@ section {
 }
 
 .social-media a:hover {
-  color: #081b29;
+  color: var(--bg-color);
 }
 
 .social-media a::before {
@@ -279,7 +313,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: #00abf0;
+  background: var(--main-color);
   z-index: -1;
   transition: .5s;
 }
@@ -316,11 +350,11 @@ section {
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #00abf0;
+  background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem #00abf0;
+  box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: #081b29;
+  color: var(--bg-color);
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .5s ease;
@@ -335,8 +369,8 @@ section {
 .about {
   height: 100vh;
   padding: 100px 10%;
-  background-color: #0b2b3a;
-  color: #ededed;
+  background-color: var(--snd-bf-color);
+  color: var(--text-color);
 }
 
 .about-container {
@@ -349,7 +383,7 @@ section {
   font-size: 2.5em;
   margin-bottom: 30px;
   position: relative;
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 .section-title::after {
@@ -357,7 +391,7 @@ section {
   position: absolute;
   width: 100px;
   height: 4px;
-  background: #00abf0;
+  background: var(--main-color);
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
@@ -383,14 +417,14 @@ section {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #00abf0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 5px solid var(--main-color);
+  box-shadow: 0 10px 30px var(--snd-main-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-img img:hover {
   transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 40px var(--thd-main-color); 
 }
 
 .about-text {
@@ -398,7 +432,7 @@ section {
   max-width: 600px;
   font-size: 1.1em;
   line-height: 1.6;
-  color: #ededed;
+  color: var(--text-color);
   text-align: justify;
   padding: 0 20px;
   animation: fadeInUp 0.5s ease-in-out forwards;
@@ -424,7 +458,7 @@ section {
 .services {
   height: 100vh;
   padding: 100px 10%;
-  background-color: #0e3b50;
+  background-color: var(--thd-bf-color);
 }
 
 .services h2 {
@@ -438,7 +472,7 @@ section {
 }
 
 .service-box {
-  background: #081b29;
+  background: var(--bg-color);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -447,26 +481,26 @@ section {
 
 .service-box i {
   font-size: 50px;
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 .service-box h3 {
   margin: 10px 0;
-  color: #ededed;
+  color: var(--text-color);
 }
 
 .service-box p {
-  color: #ccc;
+  color: var(--snd-text-color);
   margin: 1rem 0 3rem;
 }
 
 .service-container .service-box { 
   padding: 3rem 2rem 4rem; 
-  border: .2rem solid #081b29;
+  border: .2rem solid var(--bg-color);
 }
 
 .service-container .service-box:hover {
-  border-color: #00abf0;
+  border-color: var(--main-color);
   transform: scale(1.02);
 }
 
@@ -474,8 +508,8 @@ section {
 .portfolio {
   height: 300vh;
   padding: 100px 10%;
-  background-color: #0f435a;
-  color: #ededed;
+  background-color:  var(--fr-bf-color);
+  color: var(--text-color);
 }
 
 .portfolio h2 {
@@ -504,7 +538,7 @@ section {
   width: 100%;
   bottom: -100%; /* Sembunyikan info awalnya */
   left: 0;
-  background: #081b29;
+  background: var(--bg-color);
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -512,7 +546,7 @@ section {
 }
 
 .portfolio-info h3 {
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 .portfolio-item:hover .portfolio-info {
@@ -523,8 +557,8 @@ section {
 .contact {
   height: 100vh;
   padding: 100px 10%;
-  background-color: #081b29;
-  color: #ededed;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .contact-container {
@@ -540,17 +574,17 @@ section {
 .form-group textarea {
   width: 100%;
   padding: 15px;
-  background: #0f435a;
+  background: var(--fr-bf-color);
   border: none;
   border-radius: 5px;
-  color: #ededed;
+  color: var(--text-color);
   font-size: 16px;
   resize: none;
 }
 
 button {
-  background-color: #00abf0;
-  color: #081b29;
+  background-color: var(--main-color);
+  color: var(--bg-color);
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -561,7 +595,7 @@ button {
 }
 
 button:hover {
-  background-color: #00a1d0;
+  background-color: var(--main-color);
 }
 
 .footer {
@@ -577,18 +611,18 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: .8rem 1rem;
-  background:#081b29;
+  background: var(--bg-color);
   border-radius: .8rem;
   transition: .5s ease; 
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 1rem #00abf0;
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
-  color: #00abf0;
+  color: var(--main-color);
 }
 
 /* Responsive */
@@ -642,7 +676,7 @@ button:hover {
     position: absolute;
     width: 100%; 
     height: 14vh;
-    background:#081b29;
+    background: var(--bg-color);
     padding: 10px;
     border-radius: 10px;
   }
@@ -688,15 +722,19 @@ button:hover {
     display: block;
   }
 
+  #icon {
+    margin-left: 350px;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem 3%; 
-    background: #081b29;
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    background: var(--bg-color);
+    border-top: .1rem solid var(--fv-main-color);
+    box-shadow: 0 .5rem 1rem var(--fr-main-color);
     display: none;
   }
 
@@ -778,7 +816,6 @@ button:hover {
     position: absolute;
     width: 100%; 
     height: 16vh;
-    background:#081b29;
     padding: 10px;
     border-radius: 10px;
   }
@@ -822,7 +859,6 @@ button:hover {
     position: absolute;
     width: 100%; 
     height: 24vh;
-    background:#081b29;
     padding: 10px;
     border-radius: 10px;
   }
@@ -840,6 +876,10 @@ button:hover {
 
   .header {
     padding: 10px 5%;
+  }
+
+  #icon {
+    margin-left: 185px;
   }
 
   .home {
@@ -877,7 +917,6 @@ button:hover {
     position: absolute;
     width: 100%; 
     height: 12vh; 
-    background: #081b29;
     border-radius: 10px;
   }
 
@@ -909,6 +948,24 @@ button:hover {
   }
 }
 
+@media (max-width: 430px) {
+  #icon {
+    margin-left: 190px;
+  }
+}
+
+@media (max-width: 412px) {
+  #icon {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 390px) {
+  #icon {
+    margin-left: 175px;
+  }
+}
+
 @media (max-width: 375px) {
   .header {
     padding: 15px 5%;
@@ -923,6 +980,10 @@ button:hover {
     flex-direction: column;
     text-align: center;
     height: 140vh;
+  }
+
+  #icon {
+    margin-left: 165px;
   }
 
   .about {
@@ -964,7 +1025,6 @@ button:hover {
 
   .portfolio-info {
     margin-top: 15px; /* Jarak antara gambar dan info */
-    background: #081b29;
     padding: 10px;
     border-radius: 10px;
     width: 100%; /* Info mengisi lebar penuh */
@@ -974,8 +1034,6 @@ button:hover {
     position: absolute;
     width: 100%; 
     height: auto;
-    /* left: 10px; */
-    background:#081b29;
     padding: 10px;
     border-radius: 10px;
   }
