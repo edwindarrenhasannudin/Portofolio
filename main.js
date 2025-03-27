@@ -49,4 +49,13 @@ ScrollReveal().reveal('.home-img, .service-container, .portfolio-container, .con
 ScrollReveal().reveal('.contact h2, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.contact p, .about-content', { origin: 'right' });
 
- 
+document.addEventListener('DOMContentLoaded', (e) => {
+    // Set timeout untuk menyembunyikan splash screen
+    setTimeout(() => {
+        const splash = document.querySelector('.splash');
+        splash.style.display = 'none';
+        
+        // Tampilkan konten utama
+        document.querySelector('.content').style.display = 'block';
+    }, 1500); // Sesuaikan waktu dengan durasi animasi
+}); 
