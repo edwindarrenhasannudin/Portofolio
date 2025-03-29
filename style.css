@@ -212,7 +212,7 @@ section {
   height: 100%;
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .home-content h3 {
@@ -231,7 +231,7 @@ section {
   height: 100%;
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.9s;
 }
 
 .home-content p {
@@ -250,7 +250,7 @@ section {
   height: 100%;
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
-  animation-delay: 1.6s;
+  animation-delay: 2s;
 }
 
 .home-content .btn-box {
