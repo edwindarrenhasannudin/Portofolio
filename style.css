@@ -55,7 +55,6 @@ body {
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
-  animation: fadeIn 0.5s ease-out 1.8s forwards; 
 }
 
 .splash {
@@ -69,7 +68,6 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: fadeOut 0.5s ease-out 1.5s forwards;
 }
 
 .splash-logo {
