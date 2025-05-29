@@ -571,7 +571,7 @@ section {
 
 /* Portfolio Section */
 .portfolio {
-  height: 300vh;
+  height: 340vh;
   padding: 100px 10%;
   background-color:  var(--fr-bf-color);
   color: var(--text-color);
