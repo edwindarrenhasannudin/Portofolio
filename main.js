@@ -59,3 +59,43 @@ document.addEventListener('DOMContentLoaded', (e) => {
         document.querySelector('.content').style.display = 'block';
     }, 1500); // Sesuaikan waktu dengan durasi animasi
 }); 
+
+const certificateImages = [
+  "assets/Edwin Darren Hasannudin.png",
+  "assets/Sertifikat public speaking.jpg",
+  "assets/Sertifikat Kabinet Edwin Hasannudin.png",
+  "assets/Sertifikat Edwin Darren Hasannudin-1.png",
+  // Tambahkan path gambar sertifikat lain di sini
+];
+
+let currentIndex = 0;
+const imgEl = document.getElementById('certificate-img');
+const btnLeft = document.querySelector('.carousel-btn.left');
+const btnRight = document.querySelector('.carousel-btn.right');
+const dots = document.querySelectorAll('.carousel-dots .dot');
+
+function showCertificate(idx) {
+  imgEl.src = certificateImages[idx];
+  // Update dot aktif
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === idx);
+  });
+}
+
+btnLeft.onclick = function() {
+  currentIndex = (currentIndex - 1 + certificateImages.length) % certificateImages.length;
+  showCertificate(currentIndex);
+};
+btnRight.onclick = function() {
+  currentIndex = (currentIndex + 1) % certificateImages.length;
+  showCertificate(currentIndex);
+};
+dots.forEach((dot, i) => {
+  dot.onclick = function() {
+    currentIndex = i;
+    showCertificate(currentIndex);
+  };
+});
+
+// Inisialisasi tampilan awal
+showCertificate(currentIndex);
