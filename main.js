@@ -70,8 +70,7 @@ const certificateImages = [
 
 let currentIndex = 0;
 const imgEl = document.getElementById('certificate-img');
-const btnLeft = document.querySelector('.carousel-btn.left');
-const btnRight = document.querySelector('.carousel-btn.right');
+const cardEl = document.getElementById('certificate-card');
 const dots = document.querySelectorAll('.carousel-dots .dot');
 
 function showCertificate(idx) {
@@ -81,12 +80,8 @@ function showCertificate(idx) {
     dot.classList.toggle('active', i === idx);
   });
 }
-
-btnLeft.onclick = function() {
-  currentIndex = (currentIndex - 1 + certificateImages.length) % certificateImages.length;
-  showCertificate(currentIndex);
-};
-btnRight.onclick = function() {
+// Ganti sertifikat ke berikutnya saat card diklik
+cardEl.onclick = function() {
   currentIndex = (currentIndex + 1) % certificateImages.length;
   showCertificate(currentIndex);
 };
@@ -99,3 +94,35 @@ dots.forEach((dot, i) => {
 
 // Inisialisasi tampilan awal
 showCertificate(currentIndex);
+
+const projectCards = document.querySelectorAll('.project-card');
+const btnProjectLeft = document.getElementById('project-btn-left');
+const btnProjectRight = document.getElementById('project-btn-right');
+let projectIndex = 0;
+
+function updateProjectStack() {
+  projectCards.forEach((card, i) => {
+    card.classList.remove('active', 'left', 'right', 'far');
+    if (i === projectIndex) {
+      card.classList.add('active');
+    } else if (i === (projectIndex - 1 + projectCards.length) % projectCards.length) {
+      card.classList.add('left');
+    } else if (i === (projectIndex + 1) % projectCards.length) {
+      card.classList.add('right');
+    } else {
+      card.classList.add('far');
+    }
+  });
+}
+
+btnProjectLeft.onclick = function() {
+  projectIndex = (projectIndex - 1 + projectCards.length) % projectCards.length;
+  updateProjectStack();
+};
+btnProjectRight.onclick = function() {
+  projectIndex = (projectIndex + 1) % projectCards.length;
+  updateProjectStack();
+};
+
+// Inisialisasi tampilan awal
+updateProjectStack();
