@@ -572,38 +572,12 @@ section {
 /* Portfolio Section */
 .portfolio {
   padding: 100px 10%;
-  background-color:  var(--fr-bf-color);
+  background-color: var(--fr-bf-color);
   color: var(--text-color);
 }
 
 .portfolio h2 {
   padding-bottom: 20px;
-}
-
-.portfolio-item img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.portfolio-item .portfolio-info {
-  position: absolute;
-  width: 100%;
-  bottom: -100%; /* Sembunyikan info awalnya */
-  left: 0;
-  background: var(--bg-color);
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  transition: bottom 0.3s ease;
-}
-
-.portfolio-info h3 {
-  color: var(--main-color);
-}
-
-.portfolio-item:hover .portfolio-info {
-  bottom: 0; /* Tampilkan info saat hover */
 }
 
 .portfolio-item-1 {
@@ -644,12 +618,8 @@ section {
     opacity: 1; /* Munculkan kembali */
     transform: translateY(0); /* Kembalikan ke posisi semula (tidak digeser) */
 }
-        
-
 
 /* Styling untuk teks di dalam info */
-
-
 .portfolio-info-1 p {
     margin: 0 0 15px 0;
     font-size: 0.9em;
@@ -773,45 +743,6 @@ section {
 }
 .project-widget-carousel .carousel-btn.left { left: -60px; }
 .project-widget-carousel .carousel-btn.right { right: -60px; }
-
-@media (max-width: 600px) {
-  .project-track { width: 98vw; }
-  .project-card { width: 90vw; min-width: 0; }
-  .project-widget-carousel .carousel-btn.left { left: -20px; }
-  .project-widget-carousel .carousel-btn.right { right: -20px; }
-  .portfolio {
-    padding: 40px 2vw;
-  }
-  .project-widget-carousel {
-    height: 260px;
-    padding: 0 2vw;
-  }
-  .project-track {
-    height: 220px;
-  }
-  .project-card {
-    width: 96vw;
-    max-width: 99vw;
-    height: 200px;
-    padding: 10px 2vw;
-    border-radius: 10px;
-  }
-  .project-card img {
-    height: 70px;
-    border-radius: 7px;
-  }
-  .project-card h3 {
-    font-size: 1em;
-  }
-  .project-card p {
-    font-size: 0.9em;
-  }
-  .project-widget-carousel .carousel-btn {
-    width: 28px;
-    height: 28px;
-    font-size: 1em;
-  }
-}
 
 /* Certification Section */
 .certificates {
@@ -1053,6 +984,10 @@ button:hover {
     height: 100%;
   }
 
+  .portfolio h2 {
+    padding-bottom: 300px;
+  }
+
   .portfolio-item {
     position: relative;
   }
@@ -1069,6 +1004,10 @@ button:hover {
     background: var(--bg-color);
     padding: 10px;
     border-radius: 10px;
+  }
+
+  .certificates h2 {
+    padding-bottom: 300px; 
   }
 
   .contact-container {
@@ -1129,6 +1068,67 @@ button:hover {
     width: 36px;
     height: 36px;
     font-size: 1.1em;
+  }
+  .portfolio h2 {
+    padding-bottom: 300px;
+  }
+
+  .project-widget-carousel {
+    max-width: 100vw;
+    height: 180px;
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+
+  .project-track {
+    width: 100vw;
+    height: 160px;
+  }
+  .project-card {
+    width: auto;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .project-card img {
+    height: auto;
+    width: 90%;
+  }
+  .project-info {
+    padding: 0 2px;
+  }
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+  #project-btn-right {
+    margin-right: -30px;
+  }
+  #project-btn-left {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .certificates {
+    padding: 60px 3%;
+  }
+  .certificate-carousel {
+    max-width: 100vw;
+    padding-bottom: 20px;
+  }
+  .certificate-card {
+    padding: 10px 10px;
+    min-width: 0;
+    max-width: 95vw;
+  }
+  .certificate-card img {
+    height: 220px;
+    max-width: 90vw;
+  }
+  .certificate-card .carousel-btn.left {
+    left: -60px;
+  }
+  .certificate-card .carousel-btn.right {
+    right: -60px;
   }
 }
 
@@ -1224,24 +1224,41 @@ button:hover {
     height: 100%;
   }
 
-  .portfolio-item {
-    position: relative;
+  .portfolio h2 {
+    padding-bottom: 300px;
   }
 
-  .portfolio-item img {
+  .project-widget-carousel {
+    max-width: 100vw;
+    height: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .project-track {
+    width: 100vw;
+    height: 160px;
+  }
+  .project-card {
+    width: auto;
+    height: 450px;
     border-radius: 10px;
   }
-
-  .portfolio-item .portfolio-info {
-    position: absolute;
-    width: 100%; 
-    height: 16vh;
-    padding: 10px;
-    border-radius: 10px;
+  .project-card img {
+    height: auto;
+    width: 90%;
   }
-
-  .portfolio-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .project-info {
+    padding: 0 2px;
+  }
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+  #project-btn-right {
+    margin-right: 20px;
+  }
+  #project-btn-left {
+    margin-left: 20px;
   }
 }
 
@@ -1258,6 +1275,91 @@ button:hover {
   .about-img img {
     width: 100vh;
     margin-top: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-track { width: 98vw; }
+  .project-card { width: 90vw; min-width: 0; }
+  .project-widget-carousel .carousel-btn.left { left: -20px; }
+  .project-widget-carousel .carousel-btn.right { right: -20px; }
+  .portfolio {
+    padding: 40px 2vw;
+  }
+  .project-widget-carousel {
+    height: 260px;
+    padding: 0 2vw;
+  }
+  .project-track {
+    height: 220px;
+  }
+  .project-card {
+    width: 96vw;
+    max-width: 99vw;
+    height: 200px;
+    padding: 10px 2vw;
+    border-radius: 10px;
+  }
+  .project-card img {
+    height: 70px;
+    border-radius: 7px;
+  }
+  .project-card h3 {
+    font-size: 1em;
+  }
+  .project-card p {
+    font-size: 0.9em;
+  }
+  .project-widget-carousel .carousel-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 1em;
+  }
+
+  .certificates h2 {
+    font-size: 1.8em;
+    padding-bottom: 50px;
+    padding-top: 150px;
+    text-align: center;
+  }
+  .certificate-card {
+    padding: 8px 2vw;
+    min-width: 0;
+    max-width: 98vw;
+    border-radius: 10px;
+  }
+  .certificate-card img {
+    height: 140px;
+    max-width: 96vw;
+    border-radius: 8px;
+  }
+  .certificate-card h3 {
+    font-size: 1em;
+  }
+  .certificate-card p {
+    font-size: 0.9em;
+  }
+  .certificate-card .carousel-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .certificate-card .carousel-btn.left {
+    left: -60px;
+  }
+  .certificate-card .carousel-btn.right {
+    right: -60px;
+  }
+  .certificate-card .carousel-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-dots {
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .carousel-dots .dot {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -1285,6 +1387,44 @@ button:hover {
 
   .services {
     height: 180vh;
+  }
+
+  .portfolio h2 {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+
+  .project-widget-carousel {
+    max-width: 100vw;
+    height: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .project-track {
+    width: 100vw;
+    height: 160px;
+  }
+  .project-card {
+    width: auto;
+    height: 450px;
+    border-radius: 10px;
+  }
+  .project-card img {
+    height: auto;
+    width: 90%;
+  }
+  .project-info {
+    padding: 0 2px;
+  }
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+  #project-btn-right {
+    margin-right: 20px;
+  }
+  #project-btn-left {
+    margin-left: 20px;
   }
 } 
 
@@ -1528,73 +1668,5 @@ button:hover {
   }
   .project-card h3 {
     font-size: 1.2em;
-  }
-}
-
-/* Responsive My Certificate Section */
-@media (max-width: 900px) {
-  .certificates {
-    padding: 60px 3%;
-  }
-  .certificate-carousel {
-    max-width: 100vw;
-    padding-bottom: 20px;
-  }
-  .certificate-card {
-    padding: 10px 10px;
-    min-width: 0;
-    max-width: 95vw;
-  }
-  .certificate-card img {
-    height: 220px;
-    max-width: 90vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .certificates h2 {
-    font-size: 1.8em;
-    padding-bottom: 50px;
-    padding-top: 150px;
-    text-align: center;
-  }
-  .certificate-card {
-    padding: 8px 2vw;
-    min-width: 0;
-    max-width: 98vw;
-    border-radius: 10px;
-  }
-  .certificate-card img {
-    height: 140px;
-    max-width: 96vw;
-    border-radius: 8px;
-  }
-  .certificate-card h3 {
-    font-size: 1em;
-  }
-  .certificate-card p {
-    font-size: 0.9em;
-  }
-  .certificate-card .carousel-btn {
-    width: 32px;
-    height: 32px;
-  }
-  .certificate-card .carousel-btn.left {
-    left: -60px;
-  }
-  .certificate-card .carousel-btn.right {
-    right: -60px;
-  }
-  .certificate-card .carousel-btn svg {
-    width: 20px;
-    height: 20px;
-  }
-  .carousel-dots {
-    gap: 6px;
-    margin-top: 10px;
-  }
-  .carousel-dots .dot {
-    width: 8px;
-    height: 8px;
   }
 }
