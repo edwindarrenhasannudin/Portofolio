@@ -201,6 +201,7 @@ section {
   font-size: 45px;
   font-weight: 700;
   line-height: 1.2;
+  margin-top: 60px; 
 }
 
 .home-content h1::before {
@@ -423,7 +424,7 @@ section {
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .5s ease;
-  margin-top: 130px;
+  margin-top: 90px;
 }
 
 .btn:hover {
@@ -527,7 +528,7 @@ section {
 }
 
 .services h2 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .service-container {
@@ -556,7 +557,6 @@ section {
 
 .service-box p {
   color: var(--snd-text-color);
-  margin: 1rem 0 3rem;
 }
 
 .service-container .service-box { 
@@ -571,7 +571,7 @@ section {
 
 /* Portfolio Section */
 .portfolio {
-  padding: 100px 10%;
+  padding: 80px 10%;
   background-color: var(--fr-bf-color);
   color: var(--text-color);
 }
@@ -747,12 +747,12 @@ section {
 /* Certification Section */
 .certificates {
   height: auto;
-  padding: 100px 10%;
+  padding: 80px 10%;
   background-color: var(--thd-bf-color);
 }
 
 .certificates h2 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .certificate-carousel {
@@ -878,7 +878,7 @@ section {
 /* Contact Section */
 .contact {
   height: 100vh;
-  padding: 100px 10%;
+  padding: 80px 10%;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -940,6 +940,7 @@ button:hover {
 
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem var(--main-color);
+  border-radius: 30%;
 }
 
 .footer-iconTop a i {
