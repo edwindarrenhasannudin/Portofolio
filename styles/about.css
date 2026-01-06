@@ -1,0 +1,78 @@
+/* ====== ABOUT SECTION ====== */
+
+.about {
+  height: 100vh;
+  padding: 100px 10%;
+  background-color: var(--snd-bf-color);
+  color: var(--text-color);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  position: relative;
+  color: var(--main-color);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  border-radius: 2px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--main-color);
+  box-shadow: 0 10px 30px var(--snd-main-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px var(--thd-main-color); 
+}
+
+.about-text {
+  flex: 2;
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: justify;
+  padding: 0 20px;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}

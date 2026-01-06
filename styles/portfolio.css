@@ -1,0 +1,207 @@
+/* ====== PORTFOLIO & PROJECT SECTIONS ====== */
+
+.portfolio {
+  padding: 80px 10%;
+  background-color: var(--fr-bf-color);
+  color: var(--text-color);
+}
+
+.portfolio h2 {
+  padding-bottom: 20px;
+}
+
+.portfolio-item-1 {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item-1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-info-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--bg-color);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-item-1:hover .portfolio-info-1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-info-1 p {
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+/* ====== PROJECT CAROUSEL ====== */
+
+.project-widget-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 420px;
+  overflow: visible;
+}
+
+.project-track {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 350px;
+  height: 440px;
+  margin: auto;
+  background: var(--bg-color, #fff);
+  color: var(--text-color, #222);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  opacity: 0;
+  z-index: 0;
+  transform: scale(0.8) translateX(0) rotateY(0deg);
+  transition: all 0.7s cubic-bezier(.77,0,.18,1);
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+.project-card img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 20px 0 10px 0;
+}
+
+.project-info {
+  padding: 0 10px;
+}
+
+.project-card h3 {
+  color: var(--main-color, #007bff);
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: var(--snd-text-color, #555);
+  font-size: 1em;
+}
+
+.project-card.active {
+  opacity: 1;
+  z-index: 3;
+  transform: scale(1) translateX(0) rotateY(0deg);
+  pointer-events: auto;
+}
+
+.project-card.left {
+  opacity: 0.8;
+  z-index: 2;
+  transform: scale(0.92) translateX(-60%) rotateY(25deg);
+}
+
+.project-card.right {
+  opacity: 0.8;
+  z-index: 2;
+  transform: scale(0.92) translateX(60%) rotateY(-25deg);
+}
+
+.project-card.far {
+  opacity: 0;
+  z-index: 1;
+  transform: scale(0.8) translateX(0) rotateY(0deg);
+}
+
+.project-widget-carousel .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--main-color, #007bff);
+  color: var(--bg-color, #fff);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px var(--snd-main-color, #bbb);
+  transition: background 0.3s;
+}
+
+.project-widget-carousel .carousel-btn.left { left: -60px; }
+.project-widget-carousel .carousel-btn.right { right: -60px; }
+/* ====== PROJECT TAGS ====== */
+.project-tags {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(0, 171, 240, 0.1);
+  color: var(--main-color);
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.tag:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+}
+
+.tag.html { border-color: #e34c26; color: #e34c26; }
+.tag.css { border-color: #563d7c; color: #563d7c; }
+.tag.js { border-color: #f7df1e; color: #f7df1e; }
+.tag.figma { border-color: #a259ff; color: #a259ff; }
+.tag.design { border-color: #ff6b6b; color: #ff6b6b; }
+
+.tag.html:hover { background: #e34c26; color: white; }
+.tag.css:hover { background: #563d7c; color: white; }
+.tag.js:hover { background: #f7df1e; color: #333; }
+.tag.figma:hover { background: #a259ff; color: white; }
+.tag.design:hover { background: #ff6b6b; color: white; }

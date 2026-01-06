@@ -1,0 +1,126 @@
+/* ====== CERTIFICATES SECTION ====== */
+
+.certificates {
+  height: auto;
+  padding: 80px 10%;
+  background-color: var(--thd-bf-color);
+}
+
+.certificates h2 {
+  padding-bottom: 30px;
+}
+
+.certificate-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.certificate-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  gap: 30px;
+}
+
+.certificate-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 10px 100px;
+  margin: 0 5px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 171, 240, 0.25);
+}
+
+.certificate-card img {
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.certificate-card h3 {
+  color: var(--main-color);
+  font-size: 1.2em;
+}
+
+.certificate-card p {
+  font-size: 0.95em;
+  color: var(--snd-text-color);
+  padding-bottom: 10px;
+}
+
+.certificate-card .carousel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--main-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px var(--snd-main-color);
+}
+
+.certificate-card .carousel-btn svg {
+  display: block;
+  margin: 0;
+}
+
+.certificate-card .carousel-btn.left {
+  left: 10px;
+}
+
+.certificate-card .carousel-btn.right {
+  right: 10px;
+}
+
+.certificate-carousel > .carousel-btn {
+  display: none;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background: var(--main-color);
+  transform: scale(1.2);
+}

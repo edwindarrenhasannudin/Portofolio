@@ -1,5 +1,6 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0.3,
     "editor.fontSize": 18,
     "editor.wordWrap": "on",
+    "liveServer.settings.port": 5501,
 }
