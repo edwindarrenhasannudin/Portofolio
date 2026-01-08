@@ -1,10 +1,11 @@
 // ====== CERTIFICATE CAROUSEL ======
 const CertificateCarousel = (() => {
   const certificateImages = [
-    'assets/Edwin Darren Hasannudin.png',
-    'assets/Sertifikat public speaking.jpg',
-    'assets/Sertifikat Kabinet Edwin Hasannudin.png',
+    'assets/2631A-HM.01.02_Sertifikat Magang an Edwin Darren Hasannudin Institut Teknologi Sumatera-1.png',
     'assets/Sertifikat Edwin Darren Hasannudin-1.png',
+    'assets/Sertifikat Kabinet Edwin Hasannudin.png',
+    'assets/Sertifikat public speaking.jpg',
+    'assets/Edwin Darren Hasannudin.png',
   ];
 
   let currentIndex = 0;

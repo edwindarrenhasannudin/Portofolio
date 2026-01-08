@@ -1,8 +1,8 @@
 /* ====== CONTACT & FOOTER SECTIONS ====== */
 
 .contact {
-  height: 100vh;
-  padding: 80px 10%;
+  height: 50vh;
+  padding: 100px 10%;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -13,7 +13,7 @@
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-group input, 
