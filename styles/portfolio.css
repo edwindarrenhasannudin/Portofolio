@@ -177,8 +177,8 @@
 
 .tag {
   display: inline-block;
-  padding: 4px 12px;
-  background: rgba(0, 171, 240, 0.1);
+  padding: 6px 14px;
+  background: rgba(0, 171, 240, 0.15);
   color: var(--main-color);
   border-radius: 20px;
   font-size: 0.75em;
@@ -194,14 +194,109 @@
   transform: scale(1.05);
 }
 
-.tag.html { border-color: #e34c26; color: #e34c26; }
-.tag.css { border-color: #563d7c; color: #563d7c; }
-.tag.js { border-color: #f7df1e; color: #f7df1e; }
-.tag.figma { border-color: #a259ff; color: #a259ff; }
-.tag.design { border-color: #ff6b6b; color: #ff6b6b; }
+.tag.html { 
+  background: rgba(227, 76, 38, 0.15);
+  border-color: #e34c26; 
+  color: #e34c26; 
+}
+
+.tag.css { 
+  background: rgba(86, 61, 124, 0.15);
+  border-color: #563d7c; 
+  color: #563d7c; 
+}
+
+.tag.js { 
+  background: rgba(247, 223, 30, 0.2);
+  border-color: #e6c200; 
+  color: #c49800; 
+}
+
+.tag.figma { 
+  background: rgba(162, 89, 255, 0.15);
+  border-color: #a259ff; 
+  color: #a259ff; 
+}
+
+.tag.design { 
+  background: rgba(255, 107, 107, 0.15);
+  border-color: #ff6b6b; 
+  color: #ff6b6b; 
+}
 
 .tag.html:hover { background: #e34c26; color: white; }
 .tag.css:hover { background: #563d7c; color: white; }
-.tag.js:hover { background: #f7df1e; color: #333; }
+.tag.js:hover { background: #d4af00; color: white; }
 .tag.figma:hover { background: #a259ff; color: white; }
 .tag.design:hover { background: #ff6b6b; color: white; }
+
+/* Light theme tag adjustments */
+.light-theme .tag.html { 
+  background: #ffe6db;
+  color: #d43014;
+  border-color: #d43014;
+}
+
+.light-theme .tag.html:hover {
+  background: #d43014;
+  color: white;
+  border-color: #d43014;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(212, 48, 20, 0.3);
+}
+
+.light-theme .tag.css { 
+  background: #f0e6ff;
+  color: #4a2f6d;
+  border-color: #4a2f6d;
+}
+
+.light-theme .tag.css:hover {
+  background: #4a2f6d;
+  color: white;
+  border-color: #4a2f6d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(74, 47, 109, 0.3);
+}
+
+.light-theme .tag.js { 
+  background: #fffcdb;
+  color: #b89500;
+  border-color: #d4af00;
+}
+
+.light-theme .tag.js:hover {
+  background: #d4af00;
+  color: white;
+  border-color: #d4af00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(212, 175, 0, 0.3);
+}
+
+.light-theme .tag.figma { 
+  background: #f3e6ff;
+  color: #8b4dbf;
+  border-color: #8b4dbf;
+}
+
+.light-theme .tag.figma:hover {
+  background: #8b4dbf;
+  color: white;
+  border-color: #8b4dbf;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(139, 77, 191, 0.3);
+}
+
+.light-theme .tag.design { 
+  background: #ffdbdb;
+  color: #d43030;
+  border-color: #d43030;
+}
+
+.light-theme .tag.design:hover {
+  background: #d43030;
+  color: white;
+  border-color: #d43030;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(212, 48, 48, 0.3);
+}
