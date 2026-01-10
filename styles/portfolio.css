@@ -224,11 +224,39 @@
   color: #ff6b6b; 
 }
 
+.tag.gcp { 
+  background: rgba(66, 133, 244, 0.15);
+  border-color: #4285f4; 
+  color: #4285f4; 
+}
+
+.tag.pwa { 
+  background: rgba(156, 39, 176, 0.15);
+  border-color: #9c27b0; 
+  color: #9c27b0; 
+}
+
+.tag.redis { 
+  background: rgba(216, 44, 32, 0.15);
+  border-color: #d82c20; 
+  color: #d82c20; 
+}
+
+.tag.docker { 
+  background: rgba(13, 183, 237, 0.15);
+  border-color: #0db7ed; 
+  color: #0db7ed; 
+}
+
 .tag.html:hover { background: #e34c26; color: white; }
 .tag.css:hover { background: #563d7c; color: white; }
 .tag.js:hover { background: #d4af00; color: white; }
 .tag.figma:hover { background: #a259ff; color: white; }
 .tag.design:hover { background: #ff6b6b; color: white; }
+.tag.gcp:hover { background: #4285f4; color: white; }
+.tag.pwa:hover { background: #9c27b0; color: white; }
+.tag.redis:hover { background: #d82c20; color: white; }
+.tag.docker:hover { background: #0db7ed; color: white; }
 
 /* Light theme tag adjustments */
 .light-theme .tag.html { 
@@ -287,16 +315,66 @@
   box-shadow: 0 4px 12px rgba(139, 77, 191, 0.3);
 }
 
-.light-theme .tag.design { 
-  background: #ffdbdb;
-  color: #d43030;
-  border-color: #d43030;
-}
-
 .light-theme .tag.design:hover {
   background: #d43030;
   color: white;
   border-color: #d43030;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(212, 48, 48, 0.3);
+}
+
+.light-theme .tag.gcp { 
+  background: #f0f4ff;
+  color: #3367d6;
+  border-color: #3367d6;
+}
+
+.light-theme .tag.gcp:hover {
+  background: #3367d6;
+  color: white;
+  border-color: #3367d6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(51, 103, 214, 0.3);
+}
+
+.light-theme .tag.pwa { 
+  background: #f4ebf8;
+  color: #7b1fa2;
+  border-color: #7b1fa2;
+}
+
+.light-theme .tag.pwa:hover {
+  background: #7b1fa2;
+  color: white;
+  border-color: #7b1fa2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(123, 31, 162, 0.3);
+}
+
+.light-theme .tag.redis { 
+  background: #fdeaea;
+  color: #b71c1c;
+  border-color: #b71c1c;
+}
+
+.light-theme .tag.redis:hover {
+  background: #b71c1c;
+  color: white;
+  border-color: #b71c1c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(183, 28, 28, 0.3);
+}
+
+.light-theme .tag.docker { 
+  background: #e0f7ff;
+  color: #0277bd;
+  border-color: #0277bd;
+}
+
+.light-theme .tag.docker:hover {
+  background: #0277bd;
+  color: white;
+  border-color: #0277bd;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(2, 119, 189, 0.3);
 }
