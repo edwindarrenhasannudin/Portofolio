@@ -993,7 +993,7 @@
   }
 
   .portfolio {
-    height: 970vh;
+    height: 1100vh;
     padding: 50px 10%;
   }
 
@@ -1074,7 +1074,7 @@
 
   .portfolio-item-1 {
     width: auto;
-    height: 400px;
+    height: 420px;
     border-radius: 10px;
     padding: 10px 20px;
     text-align: center;

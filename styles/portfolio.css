@@ -81,7 +81,7 @@
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   width: 350px;
-  height: 440px;
+  height: 480px;
   margin: auto;
   background: var(--bg-color, #fff);
   color: var(--text-color, #222);
@@ -248,6 +248,24 @@
   color: #0db7ed; 
 }
 
+.tag.python { 
+  background: rgba(233, 30, 99, 0.15);
+  border-color: #e91e63; 
+  color: #e91e63; 
+}
+
+.tag.analysis { 
+  background: rgba(255, 112, 67, 0.15);
+  border-color: #ff7043; 
+  color: #ff7043; 
+}
+
+.tag.viz { 
+  background: rgba(156, 204, 101, 0.15);
+  border-color: #9ccc65; 
+  color: #9ccc65; 
+}
+
 .tag.html:hover { background: #e34c26; color: white; }
 .tag.css:hover { background: #563d7c; color: white; }
 .tag.js:hover { background: #d4af00; color: white; }
@@ -257,6 +275,9 @@
 .tag.pwa:hover { background: #9c27b0; color: white; }
 .tag.redis:hover { background: #d82c20; color: white; }
 .tag.docker:hover { background: #0db7ed; color: white; }
+.tag.python:hover { background: #e91e63; color: white; }
+.tag.analysis:hover { background: #ff7043; color: white; }
+.tag.viz:hover { background: #9ccc65; color: white; }
 
 /* Light theme tag adjustments */
 .light-theme .tag.html { 
@@ -377,4 +398,46 @@
   border-color: #0277bd;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(2, 119, 189, 0.3);
+}
+
+.light-theme .tag.python { 
+  background: #fce4ec;
+  color: #c2185b;
+  border-color: #c2185b;
+}
+
+.light-theme .tag.python:hover {
+  background: #c2185b;
+  color: white;
+  border-color: #c2185b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.3);
+}
+
+.light-theme .tag.analysis { 
+  background: #ffe0b2;
+  color: #d84315;
+  border-color: #d84315;
+}
+
+.light-theme .tag.analysis:hover {
+  background: #d84315;
+  color: white;
+  border-color: #d84315;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(216, 67, 21, 0.3);
+}
+
+.light-theme .tag.viz { 
+  background: #f1f8e9;
+  color: #558b2f;
+  border-color: #558b2f;
+}
+
+.light-theme .tag.viz:hover {
+  background: #558b2f;
+  color: white;
+  border-color: #558b2f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(85, 139, 47, 0.3);
 }
