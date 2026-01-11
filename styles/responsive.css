@@ -976,6 +976,10 @@
   .services {
     height: 160vh;
   }
+
+  .certificates {
+    height: 115vh;
+  }
 }
 
 @media (max-width: 375px) {
