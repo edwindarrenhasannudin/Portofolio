@@ -1,6 +1,15 @@
 // ====== CERTIFICATE CAROUSEL ======
 const CertificateCarousel = (() => {
   const certificateImages = [
+    'assets/Edwin Darren Hasannudin  E-sertifikat Digihabit Build Your Career.png',
+    'assets/Edwin Darren Hasannudin E-sertifikat Webinar AMEFEST.png',
+    'assets/Edwin Darren Hasannudin  E-sertifikat Ai For Business by aifest id.png',
+    'assets/Edwin Darren Hasannudin E-Sertifikat AI For Content Creator by Aifest id.png',
+    'assets/Edwin Darren Hasannudin E-Sertifikat Webinar Ai For Automation _ Aifest Id.png',
+    'assets/Edwin Darren Hasannudin E-sertifikat Ai For Freelancer _ Aifest Id.png',
+    'assets/Edwin Darren Hasannudin E-Sertifikat Ai For Job Seeker on Aifest Id.png',
+    'assets/E-sertifikat Edwin Darren Hasannudin Ai for Self space _ Aifest id.png',
+    'assets/E-sertifikat Edwin Darren Hasannudin Ai For Student _ Aifest id.png',
     'assets/Edwin Darren Hasannudin - Sistem Informasi-1.png',
     'assets/2631A-HM.01.02_Sertifikat Magang an Edwin Darren Hasannudin Institut Teknologi Sumatera-1.png',
     'assets/Sertifikat Edwin Darren Hasannudin-1.png',
@@ -23,6 +32,23 @@ const CertificateCarousel = (() => {
     if (!imgEl || !cardEl || dots.length === 0) {
       console.warn('⚠️ Certificate carousel elements not found');
       return;
+    }
+
+    // Event listeners untuk tombol navigasi arrow
+    const leftBtn = cardEl.querySelector('.carousel-btn.left');
+    const rightBtn = cardEl.querySelector('.carousel-btn.right');
+    
+    if (leftBtn) {
+      leftBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevCertificate();
+      });
+    }
+    if (rightBtn) {
+      rightBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextCertificate();
+      });
     }
 
     // Event listener untuk card click
@@ -52,6 +78,11 @@ const CertificateCarousel = (() => {
 
   const nextCertificate = () => {
     currentIndex = (currentIndex + 1) % certificateImages.length;
+    showCertificate(currentIndex);
+  };
+
+  const prevCertificate = () => {
+    currentIndex = (currentIndex - 1 + certificateImages.length) % certificateImages.length;
     showCertificate(currentIndex);
   };
 
