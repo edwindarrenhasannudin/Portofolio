@@ -1,6 +1,7 @@
 // ====== CERTIFICATE CAROUSEL ======
 const CertificateCarousel = (() => {
   const certificateImages = [
+    'assets/Sertifikat_YOT_TechTalk_2026_Edwin_Darren_Hasannudin.png',
     'assets/Sertifikat-EDWIN DARREN HASANNUDIN-CFL Block Chain.png',
     'assets/EDWIN DARREN HASANNUDIN  E-Sertifkat Webinar CFL-1.png',
     'assets/Edwin Darren Hasannudin  E-sertifikat Digihabit Build Your Career.png',
