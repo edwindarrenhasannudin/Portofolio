@@ -212,6 +212,72 @@
   color: #c49800; 
 }
 
+.tag.php { 
+  background: rgba(0, 120, 230, 0.15);
+  border-color: #0078e6; 
+  color: #0078e6; 
+}
+
+.tag.mysql { 
+  background: rgba(13, 110, 253, 0.15);
+  border-color: #0d6efd; 
+  color: #0d6efd; 
+}
+
+.tag.codeigniter { 
+  background: rgba(255, 94, 58, 0.15);
+  border-color: #ff5e3a; 
+  color: #ff5e3a; 
+}
+
+.tag.git { 
+  background: rgba(240, 80, 51, 0.15);
+  border-color: #f05033; 
+  color: #f05033; 
+}
+
+.tag.jira { 
+  background: rgba(77, 171, 247, 0.18);
+  border-color: #4dabf7; 
+  color: #2c7be5; 
+}
+
+.tag.bootstrap { 
+  background: rgba(111, 66, 193, 0.15);
+  border-color: #6f42c1; 
+  color: #6f42c1; 
+}
+
+.tag.crud { 
+  background: rgba(40, 167, 69, 0.15);
+  border-color: #28a745; 
+  color: #28a745; 
+}
+
+.tag.system { 
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6; 
+  color: #3b82f6; 
+}
+
+.tag.cbf { 
+  background: rgba(139, 92, 246, 0.15);
+  border-color: #8b5cf6; 
+  color: #8b5cf6; 
+}
+
+.tag.pandas { 
+  background: rgba(124, 58, 237, 0.16);
+  border-color: #8b5cf6; 
+  color: #6d28d9; 
+}
+
+.tag.data-analysis { 
+  background: rgba(15, 118, 110, 0.15);
+  border-color: #0f766e; 
+  color: #0f766e; 
+}
+
 .tag.figma { 
   background: rgba(162, 89, 255, 0.15);
   border-color: #a259ff; 
@@ -269,6 +335,17 @@
 .tag.html:hover { background: #e34c26; color: white; }
 .tag.css:hover { background: #563d7c; color: white; }
 .tag.js:hover { background: #d4af00; color: white; }
+.tag.php:hover { background: #0078e6; color: white; }
+.tag.mysql:hover { background: #0d6efd; color: white; }
+.tag.codeigniter:hover { background: #ff5e3a; color: white; }
+.tag.git:hover { background: #f05033; color: white; }
+.tag.jira:hover { background: #4dabf7; color: white; }
+.tag.bootstrap:hover { background: #6f42c1; color: white; }
+.tag.crud:hover { background: #28a745; color: white; }
+.tag.system:hover { background: #3b82f6; color: white; }
+.tag.cbf:hover { background: #8b5cf6; color: white; }
+.tag.pandas:hover { background: #8b5cf6; color: white; }
+.tag.data-analysis:hover { background: #0f766e; color: white; }
 .tag.figma:hover { background: #a259ff; color: white; }
 .tag.design:hover { background: #ff6b6b; color: white; }
 .tag.gcp:hover { background: #4285f4; color: white; }
