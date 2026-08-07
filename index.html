@@ -101,6 +101,15 @@
         // Wait for components to be loaded before initializing light theme
         document.addEventListener('componentsLoaded', () => {
             var icon = document.getElementById("icon");
+
+            function updateProjectIconColor() {
+                const projectIcons = document.querySelectorAll('.project-card a i.fa-up-right-from-square');
+                const isLight = document.body.classList.contains('light-theme');
+                projectIcons.forEach(iconEl => {
+                    iconEl.style.color = isLight ? '' : '#FFEA00';
+                });
+            }
+
             if (icon) {
                 icon.onclick = function() {
                     document.body.classList.toggle("light-theme");
@@ -109,10 +118,13 @@
                     } else {
                         icon.src = "assets/sun.png";
                     }
+                    updateProjectIconColor();
                 }
             } else {
                 console.warn('⚠️ Icon element not found');
             }
+
+            updateProjectIconColor();
         });
     </script>
 

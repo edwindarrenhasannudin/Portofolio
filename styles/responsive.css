@@ -671,6 +671,15 @@
     margin-top: 10px;
   }
 
+  .project-card a i.fa-up-right-from-square {
+    color: #FFEA00;
+    transition: color 0.25s ease;
+  }
+
+  .light-theme .project-card a i.fa-up-right-from-square {
+    color: inherit;
+  }
+
   /* Hide carousel buttons on mobile (no need for vertical list) */
   .project-widget-carousel .carousel-btn {
     display: none;
