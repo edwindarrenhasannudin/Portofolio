@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project details for the Food Ingredient Recommendation System, a bachelor's thesis by Edwin Darren Hasannudin.">
+    <title>Food Ingredient Recommendation System | Edwin Darren</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body class="light-theme">
+    <main class="project-detail">
+        <div class="project-detail-toolbar">
+            <a class="project-detail-back" href="index.html#portfolio">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to portfolio
+            </a>
+            <button class="project-theme-toggle" id="project-theme-toggle" type="button" aria-label="Switch to dark theme">
+                <img src="assets/moon.png" alt="">
+            </button>
+        </div>
+
+        <header class="project-detail-hero">
+            <img src="assets/Tugas Akhir.jpeg" alt="Food Ingredient Recommendation System bachelor's thesis project">
+            <div class="project-detail-intro">
+                <p class="project-detail-eyebrow">Bachelor's thesis</p>
+                <h1>Food Ingredient Recommendation System</h1>
+                <p>
+                    A recommendation system that explores food ingredient substitution using
+                    Content-Based Filtering. This project was developed as a bachelor's thesis.
+                </p>
+                <div class="project-detail-tags" aria-label="Technologies and methods">
+                    <span>Python</span>
+                    <span>Content-Based Filtering</span>
+                    <span>Pandas</span>
+                    <span>Data Analysis</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-detail-section project-detail-description">
+            <h2>Project overview</h2>
+            <div class="project-detail-description-grid">
+                <article class="project-detail-block">
+                    <h3>Background</h3>
+                    <p>
+                        Finding an alternative ingredient can help when a recipe's original
+                        ingredient is unavailable or needs to be replaced. This thesis focuses
+                        on food ingredient substitution as a recommendation problem.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Objective</h3>
+                    <p>
+                        Develop a system that recommends substitute food ingredients using
+                        similarities between ingredient content, applying a Content-Based
+                        Filtering approach.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Approach</h3>
+                    <p>
+                        The project applies Content-Based Filtering to the ingredient
+                        recommendation task. Python and Pandas are listed among the tools used
+                        for implementation and data analysis.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Project scope</h3>
+                    <p>
+                        The current project summary covers the recommendation method and
+                        ingredient-substitution use case. Dataset details, similarity
+                        attributes, evaluation results, and other thesis findings can be
+                        documented here as the full project description is added.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Tools and methods</h2>
+            <p>
+                Python, Pandas, data analysis, and Content-Based Filtering are the tools and
+                methods listed for this project. The exact data preparation steps, recommendation
+                flow, and evaluation methodology can be expanded here with the thesis details.
+            </p>
+        </section>
+
+        <a class="project-detail-link" href="https://github.com/EdwinHasannudin/Tugas-Akhir" target="_blank" rel="noopener noreferrer">
+            View project repository
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+    </main>
+    <script>
+        const themeToggle = document.getElementById('project-theme-toggle');
+        const themeIcon = themeToggle.querySelector('img');
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const isLightTheme = savedTheme !== 'dark';
+
+        document.body.classList.toggle('light-theme', isLightTheme);
+        themeIcon.src = isLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+        themeToggle.setAttribute('aria-label', `Switch to ${isLightTheme ? 'dark' : 'light'} theme`);
+
+        themeToggle.addEventListener('click', () => {
+            const useLightTheme = document.body.classList.toggle('light-theme');
+            localStorage.setItem('portfolio-theme', useLightTheme ? 'light' : 'dark');
+            themeIcon.src = useLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+            themeToggle.setAttribute('aria-label', `Switch to ${useLightTheme ? 'dark' : 'light'} theme`);
+        });
+    </script>
+</body>
+</html>
