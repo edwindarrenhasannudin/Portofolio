@@ -39,7 +39,7 @@ foreach ($match in $carouselNames) {
 
 Get-ChildItem $assetsDirectory -File | Where-Object {
     $_.Extension.ToLowerInvariant() -in $supportedExtensions -and
-    $_.BaseName -match '(?i)sertifikat|certificate'
+    $_.BaseName -match '(?i)sertifikat|certificate|sertifikasi'
 } | ForEach-Object {
     $sourceFiles[$_.FullName] = $_
 }

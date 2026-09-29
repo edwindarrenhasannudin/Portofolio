@@ -3,6 +3,7 @@ const CertificateCarousel = (() => {
   const certificateImages = [
     'assets/optimized-certificates/Edwin Darren Hasannudin Sertifikat Day 4-1.jpg',
     'assets/optimized-certificates/Edwin Darren Hasannudin Sertifikat Day 3 DigiHabit-1.jpg',
+    'assets/optimized-certificates/Edwin_Darren_Hasannudin-bootcamp-sertifikasi-microsoft-office-excel-word-power-point-specialist-1.jpg',
     'assets/optimized-certificates/Sertifikat_YOT_TechTalk_2026_Edwin_Darren_Hasannudin.jpg',
     'assets/optimized-certificates/Sertifikat-EDWIN DARREN HASANNUDIN-CFL Block Chain.jpg',
     'assets/optimized-certificates/EDWIN DARREN HASANNUDIN  E-Sertifkat Webinar CFL-1.jpg',
