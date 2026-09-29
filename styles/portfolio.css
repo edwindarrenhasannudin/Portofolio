@@ -166,6 +166,7 @@
 
 .project-widget-carousel .carousel-btn.left { left: -60px; }
 .project-widget-carousel .carousel-btn.right { right: -60px; }
+
 /* ====== PROJECT TAGS ====== */
 .project-tags {
   display: flex;
@@ -355,6 +356,42 @@
 .tag.python:hover { background: #e91e63; color: white; }
 .tag.analysis:hover { background: #ff7043; color: white; }
 .tag.viz:hover { background: #9ccc65; color: white; }
+
+/* Portfolio presentation polish */
+.portfolio {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 50% 0, color-mix(in srgb, var(--main-color) 13%, transparent), transparent 48%),
+    var(--fr-bf-color);
+}
+
+.portfolio-heading {
+  width: min(100%, 680px);
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.portfolio-eyebrow {
+  margin-bottom: 0.4rem;
+  color: var(--main-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.portfolio-heading h2 {
+  margin-bottom: 0.7rem;
+  padding-bottom: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.portfolio-intro {
+  max-width: 38rem;
+  margin: 0 auto;
+  color: var(--snd-text-color);
+  line-height: 1.7;
+}
 
 /* Light theme tag adjustments */
 .light-theme .tag.html { 
