@@ -1764,7 +1764,7 @@
 
   .home-content p {
     margin: 1rem 0 1.5rem;
-    text-align: center;
+    text-align: justify;
   }
 
   .home-content .btn-box {
@@ -1886,9 +1886,9 @@
 
   .project-card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+    height: clamp(150px, 24vw, 220px);
+    object-fit: contain;
+    background: var(--snd-bf-color);
     margin: 0 0 0.75rem;
   }
 
@@ -1926,9 +1926,10 @@
   }
 
   .portfolio-item-1 img {
-    height: auto;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+    width: 100%;
+    height: clamp(150px, 24vw, 220px);
+    object-fit: contain;
+    background: var(--snd-bf-color);
   }
 
   .certificate-featured {
@@ -1972,7 +1973,7 @@
 
   .home-content p {
     font-size: 0.95rem;
-    text-align: left;
+    text-align: justify;
   }
 
   .home-content .btn-box {
