@@ -1604,3 +1604,12 @@
     height: 1050vh;
   }
 }
+
+.certificates {
+  height: auto;
+  min-height: 0;
+}
+
+.certificates h2 {
+  padding: 0;
+}

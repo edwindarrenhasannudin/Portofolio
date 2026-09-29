@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detail proyek SIMONIKA 3.0 oleh Edwin Darren Hasannudin.">
+    <meta name="description" content="Project details for SIMONIKA 3.0 by Edwin Darren Hasannudin.">
     <title>SIMONIKA 3.0 | Edwin Darren</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/project-detail.css">
@@ -11,21 +11,26 @@
 </head>
 <body>
     <main class="project-detail">
-        <a class="project-detail-back" href="index.html#portfolio">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            Kembali ke portofolio
-        </a>
+        <div class="project-detail-toolbar">
+            <a class="project-detail-back" href="index.html#portfolio">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to portfolio
+            </a>
+            <button class="project-theme-toggle" id="project-theme-toggle" type="button" aria-label="Switch to light theme">
+                <img src="assets/sun.png" alt="">
+            </button>
+        </div>
 
         <header class="project-detail-hero">
-            <img src="assets/Simonika.png" alt="Tampilan proyek SIMONIKA 3.0">
+            <img src="assets/Simonika.png" alt="SIMONIKA 3.0 project interface">
             <div class="project-detail-intro">
-                <p class="project-detail-eyebrow">Detail proyek</p>
+                <p class="project-detail-eyebrow">Project details</p>
                 <h1>SIMONIKA 3.0</h1>
                 <p>
-                    Proyek sistem informasi manajemen yang dikembangkan untuk Bappenas.
-                    Saya berkontribusi dalam pengembangan backend dan koordinasi proyek.
+                    A management information system developed for Bappenas.
+                    I contributed to backend development and project coordination.
                 </p>
-                <div class="project-detail-tags" aria-label="Teknologi dan tools">
+                <div class="project-detail-tags" aria-label="Technologies and tools">
                     <span>PHP</span>
                     <span>CodeIgniter</span>
                     <span>MySQL</span>
@@ -36,66 +41,82 @@
         </header>
 
         <section class="project-detail-section project-detail-description">
-            <h2>Deskripsi lengkap</h2>
+            <h2>Project overview</h2>
             <div class="project-detail-description-grid">
                 <article class="project-detail-block">
-                    <h3>Latar belakang</h3>
+                    <h3>Background</h3>
                     <p>
-                        Proyek SIMONIKA dikembangkan selama masa kerja praktik di Kementerian Perencanaan Pembangunan Nasional (Kementerian PPN/BAPPENAS). Sistem ini diinisiasi untuk menjawab kebutuhan instansi akan platform digital yang mampu mengelola, memonitor, dan memproses data secara lebih efisien dan terintegrasi.
+                        SIMONIKA was developed during my internship at the Ministry of National Development Planning of the Republic of Indonesia (Bappenas). The project was initiated to address the ministry's need for a digital platform to manage, monitor, and process data more efficiently through an integrated system.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
-                    <h3>Tujuan</h3>
+                    <h3>Objectives</h3>
                     <p>
-                        Membangun infrastruktur <i>backend</i> yang tangguh dan aman untuk aplikasi SIMONIKA, sekaligus mengawal kelancaran siklus pengembangan agar sesuai dengan jadwal dan spesifikasi kebutuhan dari pihak kementerian.
+                        Build a reliable and secure backend for SIMONIKA while coordinating the development lifecycle to meet the ministry's requirements and schedule.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
-                    <h3>Fitur utama</h3>
+                    <h3>Key contributions</h3>
                     <ul>
-                        <li>Pengembangan dan pengelolaan modul-modul <i>backend</i> untuk pemrosesan data instansi.</li>
-                        <li>Manajemen basis data (<i>database</i>) yang terstruktur untuk mendukung skalabilitas aplikasi.</li>
-                        <li>Penyediaan integrasi API yang optimal untuk fungsionalitas antarmuka.</li>
+                        <li>Developed and maintained backend modules for processing organizational data.</li>
+                        <li>Structured database management to support application scalability.</li>
+                        <li>Supported API integration with the application interface.</li>
                     </ul>
                 </article>
 
                 <article class="project-detail-block">
-                    <h3>Proses pengerjaan</h3>
+                    <h3>Development process</h3>
                     <p>
-                        Proyek ini menuntut peran ganda sebagai <i>Backend Developer</i> sekaligus <i>Project Manager</i>. Alur pengerjaan dimulai dari tahap analisis kebutuhan sistem bersama tim BAPPENAS, perancangan arsitektur data, pengkodean sistem <i>backend</i>, hingga fase pengujian dan dokumentasi teknis.
+                        I took on both backend development and project coordination responsibilities. The work included analyzing requirements with the Bappenas team, designing the data architecture, implementing the backend, and supporting testing and technical documentation.
                     </p>
                 </article>
 
                 <article class="project-detail-block project-detail-challenge">
-                    <h3>Tantangan</h3>
+                    <h3>Challenge</h3>
                     <p>
-                        Membagi fokus antara manajemen proyek secara makro (memastikan target waktu tercapai) dengan beban kerja teknis yang sangat mendetail pada penulisan kode <i>backend</i>.
+                        Balancing project coordination and delivery schedules with the detailed technical work required to develop the backend.
                     </p>
                 </article>
 
                 <article class="project-detail-block project-detail-solution">
-                    <h3>Solusi</h3>
+                    <h3>Solution</h3>
                     <p>
-                        Menerapkan pembagian tugas dan lini masa (<i>timeline</i>) yang sangat terstruktur, serta membangun arsitektur <i>backend</i> yang modular sehingga proses pengembangan fitur dan <i>debugging</i> dapat dilakukan dengan lebih cepat tanpa mengganggu modul lain.
+                        I used a structured task breakdown and timeline, and built a modular backend architecture. This helped the team develop features and debug issues more efficiently without disrupting other modules.
                     </p>
                 </article>
             </div>
         </section>
 
         <section class="project-detail-section">
-            <h2>Peran dan kontribusi</h2>
+            <h2>Role and responsibilities</h2>
             <p>
-                Mengembangkan backend dan membantu koordinasi pengerjaan proyek
-                SIMONIKA 3.0 di Bappenas.
+                I contributed to backend development and coordinated work on the SIMONIKA 3.0 project at Bappenas.
             </p>
         </section>
 
         <a class="project-detail-link" href="https://drive.google.com/drive/folders/16Qwx-8EAmmY8AnK15CQ6fTqM-KjeVSAr?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Lihat dokumentasi proyek
+            View project documentation
             <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </a>
     </main>
+    <script>
+        const themeToggle = document.getElementById('project-theme-toggle');
+        const themeIcon = themeToggle.querySelector('img');
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const isLightTheme = savedTheme === 'light';
+
+        document.body.classList.toggle('light-theme', isLightTheme);
+        themeIcon.src = isLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+        themeToggle.setAttribute('aria-label', `Switch to ${isLightTheme ? 'dark' : 'light'} theme`);
+
+        themeToggle.addEventListener('click', () => {
+            const useLightTheme = document.body.classList.toggle('light-theme');
+            localStorage.setItem('portfolio-theme', useLightTheme ? 'light' : 'dark');
+            themeIcon.src = useLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+            themeToggle.setAttribute('aria-label', `Switch to ${useLightTheme ? 'dark' : 'light'} theme`);
+        });
+    </script>
 </body>
 </html>

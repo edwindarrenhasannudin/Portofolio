@@ -111,13 +111,14 @@
             }
 
             if (icon) {
+                const savedTheme = localStorage.getItem('portfolio-theme');
+                document.body.classList.toggle('light-theme', savedTheme === 'light');
+                icon.src = savedTheme === 'light' ? 'assets/moon.png' : 'assets/sun.png';
+
                 icon.onclick = function() {
-                    document.body.classList.toggle("light-theme");
-                    if(document.body.classList.contains("light-theme")) {
-                        icon.src = "assets/moon.png";
-                    } else {
-                        icon.src = "assets/sun.png";
-                    }
+                    const isLight = document.body.classList.toggle('light-theme');
+                    localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
+                    icon.src = isLight ? 'assets/moon.png' : 'assets/sun.png';
                     updateProjectIconColor();
                 }
             } else {
@@ -132,4 +133,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-

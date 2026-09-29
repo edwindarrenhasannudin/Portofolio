@@ -31,11 +31,11 @@ function initializePortfolio() {
       console.warn('⚠️ ScrollRevealInit module not loaded');
     }
 
-    // Initialize certificate carousel
-    if (typeof CertificateCarousel !== 'undefined') {
-      CertificateCarousel.init();
+    // Initialize certificate wall
+    if (typeof CertificateWall !== 'undefined') {
+      CertificateWall.init();
     } else {
-      console.warn('⚠️ CertificateCarousel module not loaded');
+      console.warn('⚠️ CertificateWall module not loaded');
     }
 
     // Initialize project carousel
@@ -61,4 +61,3 @@ if (document.readyState === 'loading') {
   // Also try with DOMContentLoaded as fallback
   document.addEventListener('DOMContentLoaded', initializePortfolio);
 }
-

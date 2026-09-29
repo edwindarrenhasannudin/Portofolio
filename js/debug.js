@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('ScrollNavigation:', typeof ScrollNavigation !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
   console.log('ScrollRevealInit:', typeof ScrollRevealInit !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
   console.log('SplashScreen:', typeof SplashScreen !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
-  console.log('CertificateCarousel:', typeof CertificateCarousel !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
+  console.log('CertificateWall:', typeof CertificateWall !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
   console.log('ProjectCarousel:', typeof ProjectCarousel !== 'undefined' ? '✓ loaded' : '❌ NOT loaded');
   
   // Check important elements
