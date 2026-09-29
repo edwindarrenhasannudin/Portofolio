@@ -1622,3 +1622,472 @@
 .certificates h2 {
   padding: 0;
 }
+
+/* Tablet and smaller screens */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .about,
+  .services,
+  .portfolio,
+  .certificates,
+  .contact {
+    height: auto;
+    min-height: 0;
+    padding: 5rem 6%;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .service-box {
+    min-width: 0;
+    padding: 2rem 1.25rem;
+  }
+
+  .home {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 0;
+    padding: 8rem 6% 4rem;
+  }
+
+  .home-content {
+    flex: 1 1 55%;
+    min-width: 0;
+  }
+
+  .home-content h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  .home-img {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-img img {
+    width: min(34vw, 360px);
+    height: auto;
+  }
+
+  .home-document-links {
+    margin-top: 2rem;
+  }
+
+  .social-media {
+    position: relative;
+    justify-content: flex-start;
+    margin: 1.25rem 0 0;
+    padding: 0;
+  }
+
+  .portfolio h2,
+  .certificates h2 {
+    padding-bottom: 1.5rem;
+  }
+
+  .contact-container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header {
+    padding: 1rem 5%;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    max-height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+    padding: 0.75rem 5% 1rem;
+    background: var(--bg-color);
+    border-top: 1px solid var(--thd-bf-color);
+    box-shadow: 0 0.5rem 1rem var(--fr-main-color);
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  #icon {
+    width: 30px;
+    margin: 0.75rem 0 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 7rem 6% 4rem;
+    text-align: center;
+  }
+
+  .home-content {
+    width: min(100%, 680px);
+    max-width: none;
+  }
+
+  .home-content h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
+  .home-content p {
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+
+  .home-content .btn-box {
+    width: min(100%, 345px);
+    margin: 0 auto;
+  }
+
+  .home-document-links {
+    justify-content: center;
+    margin: 1.5rem 0 0;
+  }
+
+  .home-document-links .btn {
+    margin-top: 0;
+  }
+
+  .social-media {
+    position: relative;
+    justify-content: center;
+    margin: 1.5rem auto 0;
+    padding: 0;
+  }
+
+  .home-img img {
+    width: min(60vw, 340px);
+    height: auto;
+    margin: 0;
+  }
+
+  .about,
+  .services,
+  .portfolio,
+  .certificates,
+  .contact {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 5rem 6%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-img {
+    margin-top: 1rem;
+  }
+
+  .about-img img {
+    width: min(42vw, 250px);
+    height: auto;
+    aspect-ratio: 5 / 7;
+  }
+
+  .about-text {
+    max-width: 680px;
+    padding: 0;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .service-box {
+    width: 100%;
+    min-width: 0;
+    padding: 2rem 1.25rem;
+  }
+
+  .service-box:last-child {
+    grid-column: 1 / -1;
+    width: min(100%, calc(50% - 0.5rem));
+    justify-self: center;
+  }
+
+  .portfolio h2,
+  .certificates h2 {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .project-widget-carousel {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .project-track {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 1rem;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    transform: none !important;
+    pointer-events: auto;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin: 0 0 0.75rem;
+  }
+
+  .project-info {
+    padding: 0;
+  }
+
+  .project-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .project-card .project-tags {
+    justify-content: center;
+  }
+
+  .project-widget-carousel .carousel-btn {
+    display: none;
+  }
+
+  .portfolio-item-1 {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .portfolio-info-1 {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 0 0;
+    background: transparent;
+    opacity: 1;
+    transform: none;
+  }
+
+  .portfolio-item-1 img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .certificate-featured {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .certificate-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-container {
+    width: min(100%, 640px);
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0.85rem 5%;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  #menu-icon {
+    font-size: 2.2rem;
+  }
+
+  .home {
+    padding: 6rem 5% 3rem;
+  }
+
+  .home-content h1 {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+  }
+
+  .home-content h3 {
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
+  }
+
+  .home-content p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .home-content .btn-box {
+    gap: 0.75rem;
+    height: auto;
+  }
+
+  .home-content .btn-box a {
+    width: 50%;
+    min-height: 46px;
+    font-size: 0.9rem;
+  }
+
+  .home-document-links {
+    gap: 0.75rem;
+  }
+
+  .home-document-links .btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .home-img img {
+    width: min(75vw, 300px);
+  }
+
+  .about,
+  .services,
+  .portfolio,
+  .certificates,
+  .contact {
+    padding: 4rem 5%;
+  }
+
+  .about .section-title,
+  .services h2,
+  .portfolio h2,
+  .certificates h2,
+  .contact h2 {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+    text-align: center;
+  }
+
+  .about-img img {
+    width: min(60vw, 220px);
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .service-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-box:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .project-track {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 0.85rem;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-tags {
+    gap: 0.4rem;
+  }
+
+  .project-tags .tag {
+    white-space: normal;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .certificate-featured {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .certificate-featured-files {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .certificate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .certificate-wall-subheading {
+    gap: 0.5rem;
+  }
+
+  .contact-container {
+    padding-top: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .footer {
+    gap: 1rem;
+    padding: 1.5rem 5%;
+    text-align: center;
+  }
+}
