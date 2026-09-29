@@ -70,7 +70,7 @@ I actively participate in campus organizations and activities to expand my netwo
 This portfolio website showcases:
 
 - ✨ **Modern, Responsive Design** - Works seamlessly on desktop and mobile devices
-- 🎨 **Dark/Light Theme** - Automatic theme switching based on user preference
+- 🎨 **Light/Dark Theme** - Light theme by default with an optional dark theme
 - 🎭 **Smooth Animations** - Scroll reveal effects and interactive components
 - 🎪 **Project Carousel** - Interactive carousel to browse projects
 - 📧 **Contact Form** - Direct contact integration with FormSubmit API
