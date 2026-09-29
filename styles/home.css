@@ -223,6 +223,18 @@
   margin-top: 90px;
 }
 
+.home-document-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 90px;
+}
+
+.home-document-links .btn {
+  margin-top: 0;
+}
+
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 171, 240, 0.5);

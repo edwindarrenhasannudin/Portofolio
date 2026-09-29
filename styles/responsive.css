@@ -1476,6 +1476,15 @@
     margin-top: 180px;
   }
 
+  .home-document-links {
+    justify-content: center;
+    margin-top: 180px;
+  }
+
+  .home-document-links .btn {
+    margin-top: 0;
+  }
+
   .navbar a {
   font-size: 18px;
   }
