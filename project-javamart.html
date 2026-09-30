@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project details for the Java Mart Girimulyo point-of-sale system by Edwin Darren Hasannudin.">
+    <title>Java Mart Girimulyo POS | Edwin Darren</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body class="light-theme">
+    <main class="project-detail">
+        <div class="project-detail-toolbar">
+            <a class="project-detail-back" href="index.html#portfolio">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to portfolio
+            </a>
+            <button class="project-theme-toggle" id="project-theme-toggle" type="button" aria-label="Switch to dark theme">
+                <img src="assets/moon.png" alt="">
+            </button>
+        </div>
+
+        <header class="project-detail-hero">
+            <img src="assets/Sistem Pos Kasir Java Mart Girimulyo.png" alt="Java Mart Girimulyo point-of-sale system project">
+            <div class="project-detail-intro">
+                <p class="project-detail-eyebrow">Web development</p>
+                <h1>Java Mart Girimulyo POS</h1>
+                <p>
+                    A web-based point-of-sale system developed for Java Mart Girimulyo.
+                    The project applies web technologies to support the store's cashier
+                    and sales workflows.
+                </p>
+                <div class="project-detail-tags" aria-label="Technologies">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>Point of Sale</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-detail-section project-detail-description">
+            <h2>Project overview</h2>
+            <div class="project-detail-description-grid">
+                <article class="project-detail-block">
+                    <h3>Background</h3>
+                    <p>
+                        Java Mart Girimulyo needed a point-of-sale application to support
+                        cashier operations. This project delivers a web-based system for
+                        handling the store's sales workflow.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Objective</h3>
+                    <p>
+                        Build a POS system that provides a digital workflow for recording
+                        store transactions.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Technology</h3>
+                    <p>
+                        The project uses HTML and CSS for the interface and PHP for
+                        application functionality.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Project scope</h3>
+                    <p>
+                        Add the exact cashier flow, product management features, transaction
+                        records, user roles, and other implemented capabilities here.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Implementation details</h2>
+            <p>
+                The system is presented as a web-based POS application built with HTML,
+                CSS, and PHP. Add the system flow, interface and database design, transaction
+                handling, and technical decisions here to describe the implementation fully.
+            </p>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Role and responsibilities</h2>
+            <p>
+                Add your specific contributions here, such as the parts of the cashier
+                workflow, interface, or application logic that you designed and implemented.
+            </p>
+        </section>
+
+        <a class="project-detail-link" href="https://github.com/edwindarrenhasannudin/PTI" target="_blank" rel="noopener noreferrer">
+            View project repository
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+    </main>
+    <script>
+        const themeToggle = document.getElementById('project-theme-toggle');
+        const themeIcon = themeToggle.querySelector('img');
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const isLightTheme = savedTheme !== 'dark';
+
+        document.body.classList.toggle('light-theme', isLightTheme);
+        themeIcon.src = isLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+        themeToggle.setAttribute('aria-label', `Switch to ${isLightTheme ? 'dark' : 'light'} theme`);
+
+        themeToggle.addEventListener('click', () => {
+            const useLightTheme = document.body.classList.toggle('light-theme');
+            localStorage.setItem('portfolio-theme', useLightTheme ? 'light' : 'dark');
+            themeIcon.src = useLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+            themeToggle.setAttribute('aria-label', `Switch to ${useLightTheme ? 'dark' : 'light'} theme`);
+        });
+    </script>
+</body>
+</html>
