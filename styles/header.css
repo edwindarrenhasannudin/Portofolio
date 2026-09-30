@@ -29,11 +29,16 @@
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background-color: transparent;
+  background: color-mix(in srgb, var(--bg-color) 78%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid color-mix(in srgb, var(--main-color) 18%, transparent);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--bg-color) 45%, transparent);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .logo {
@@ -60,7 +65,7 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: clamp(0.3rem, 0.65vw, 0.75rem);
+  gap: clamp(0.5rem, 1vw, 1rem);
   white-space: nowrap;
 }
 
@@ -88,47 +93,14 @@
 
 #icon {
   width: 30px;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
   cursor: pointer;
-  vertical-align: middle; 
-  flex: 0 0 auto;
-}
-
-.navbar-visits {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.38rem;
-  margin-left: 0.9rem;
-  padding: 0.48rem 0.78rem;
-  border: 1px solid color-mix(in srgb, var(--main-color) 35%, var(--bg-color));
-  border-radius: 999px;
-  background: var(--bg-color);
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--main-color) 16%, transparent);
-  color: var(--text-color);
-  font-size: 0.78rem;
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
   vertical-align: middle;
-}
-
-.navbar-visits > i {
-  color: var(--main-color);
-}
-
-.navbar-visits strong {
-  color: inherit;
-  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
 }
 
 @media (max-width: 1050px) {
   .navbar {
     gap: 0;
-  }
-
-  .navbar-visits {
-    align-self: flex-start;
-    margin: 0.25rem 0 0.75rem;
-    font-size: 0.9rem;
   }
 }
