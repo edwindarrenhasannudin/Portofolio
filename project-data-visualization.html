@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project details for an interactive visualization of rice production dynamics in Indonesia from 2020 to 2024.">
+    <title>Data Visualization | Edwin Darren</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body class="light-theme">
+    <main class="project-detail">
+        <div class="project-detail-toolbar">
+            <a class="project-detail-back" href="index.html#portfolio">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to portfolio
+            </a>
+            <button class="project-theme-toggle" id="project-theme-toggle" type="button" aria-label="Switch to dark theme">
+                <img src="assets/moon.png" alt="">
+            </button>
+        </div>
+
+        <header class="project-detail-hero">
+            <img src="assets/Poster Visualisasi Data.png" alt="Interactive visualization project about rice production in Indonesia from 2020 to 2024">
+            <div class="project-detail-intro">
+                <p class="project-detail-eyebrow">Data analytics and visualization</p>
+                <h1>Rice Production Dynamics in Indonesia</h1>
+                <p>
+                    An interactive data visualization project exploring rice production
+                    dynamics in Indonesia from 2020 to 2024.
+                </p>
+                <div class="project-detail-tags" aria-label="Technologies and methods">
+                    <span>Data Analytics</span>
+                    <span>Python</span>
+                    <span>Interactive Visualization</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-detail-section project-detail-description">
+            <h2>Project overview</h2>
+            <div class="project-detail-description-grid">
+                <article class="project-detail-block">
+                    <h3>Topic</h3>
+                    <p>
+                        The project focuses on rice production dynamics in Indonesia over
+                        the 2020–2024 period.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Objective</h3>
+                    <p>
+                        Present the production data through an interactive visualization to
+                        make patterns and comparisons easier to explore.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Tools and methods</h3>
+                    <p>
+                        Python and data analytics are listed as the project's tools and
+                        methods. Add the specific libraries and analysis steps used here.
+                    </p>
+                </article>
+
+                <article class="project-detail-block">
+                    <h3>Data and findings</h3>
+                    <p>
+                        Add the dataset source, indicators, geographic coverage, and key
+                        findings here so the results can be understood and verified.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Visualization and analysis</h2>
+            <p>
+                The project presents rice production data for 2020–2024 as an interactive
+                visualization. Add details about data preparation, chart types, filters,
+                interaction design, and the main trends identified in the analysis.
+            </p>
+        </section>
+
+        <section class="project-detail-section">
+            <h2>Role and responsibilities</h2>
+            <p>
+                Add your specific contributions here, including data collection and
+                preparation, analysis, visualization development, and presentation of findings.
+            </p>
+        </section>
+
+        <a class="project-detail-link" href="https://drive.google.com/drive/folders/1pfjamG6pjsOrQdu-v469XxC8-eTUCpPX?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            View project files
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+    </main>
+    <script>
+        const themeToggle = document.getElementById('project-theme-toggle');
+        const themeIcon = themeToggle.querySelector('img');
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const isLightTheme = savedTheme !== 'dark';
+
+        document.body.classList.toggle('light-theme', isLightTheme);
+        themeIcon.src = isLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+        themeToggle.setAttribute('aria-label', `Switch to ${isLightTheme ? 'dark' : 'light'} theme`);
+
+        themeToggle.addEventListener('click', () => {
+            const useLightTheme = document.body.classList.toggle('light-theme');
+            localStorage.setItem('portfolio-theme', useLightTheme ? 'light' : 'dark');
+            themeIcon.src = useLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+            themeToggle.setAttribute('aria-label', `Switch to ${useLightTheme ? 'dark' : 'light'} theme`);
+        });
+    </script>
+</body>
+</html>
