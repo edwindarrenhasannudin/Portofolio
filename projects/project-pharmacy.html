@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Project details for the Java Mart Girimulyo point-of-sale system by Edwin Darren Hasannudin.">
-    <title>Java Mart Girimulyo POS | Edwin Darren</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/project-detail.css">
+    <meta name="description" content="Project details for the Pharmacy Information System by Edwin Darren Hasannudin.">
+    <title>Pharmacy Information System | Edwin Darren</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/project-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body class="light-theme">
     <main class="project-detail">
         <div class="project-detail-toolbar">
-            <a class="project-detail-back" href="index.html#portfolio">
+            <a class="project-detail-back" href="../index.html#portfolio">
                 <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                 Back to portfolio
             </a>
             <button class="project-theme-toggle" id="project-theme-toggle" type="button" aria-label="Switch to dark theme">
-                <img src="assets/moon.png" alt="">
+                <img src="../assets/moon.png" alt="">
             </button>
         </div>
 
         <header class="project-detail-hero">
-            <img src="assets/Sistem Pos Kasir Java Mart Girimulyo.png" alt="Java Mart Girimulyo point-of-sale system project">
+            <img src="../assets/Sistem Informasi Apotek.jpeg" alt="Pharmacy Information System project">
             <div class="project-detail-intro">
-                <p class="project-detail-eyebrow">Web development</p>
-                <h1>Java Mart Girimulyo POS</h1>
+                <p class="project-detail-eyebrow">Web application</p>
+                <h1>Pharmacy Information System</h1>
                 <p>
-                    A web-based point-of-sale system developed for Java Mart Girimulyo.
-                    The project applies web technologies to support the store's cashier
-                    and sales workflows.
+                    A web-based pharmacy management and inventory system. This project
+                    focuses on organizing pharmacy information and stock workflows in one
+                    application.
                 </p>
                 <div class="project-detail-tags" aria-label="Technologies">
-                    <span>HTML</span>
-                    <span>CSS</span>
                     <span>PHP</span>
-                    <span>Point of Sale</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                    <span>CRUD</span>
+                    <span>Information System</span>
                 </div>
             </div>
         </header>
@@ -46,33 +47,33 @@
                 <article class="project-detail-block">
                     <h3>Background</h3>
                     <p>
-                        Java Mart Girimulyo needed a point-of-sale application to support
-                        cashier operations. This project delivers a web-based system for
-                        handling the store's sales workflow.
+                        Pharmacy operations rely on accurate, accessible information about
+                        products and inventory. This project was created as a web-based
+                        information system for pharmacy management.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
                     <h3>Objective</h3>
                     <p>
-                        Build a POS system that provides a digital workflow for recording
-                        store transactions.
+                        Provide a central application for managing pharmacy information and
+                        inventory, with data operations handled through CRUD functionality.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
                     <h3>Technology</h3>
                     <p>
-                        The project uses HTML and CSS for the interface and PHP for
-                        application functionality.
+                        PHP handles the application logic, MySQL stores system data, and
+                        Bootstrap supports the user interface.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
                     <h3>Project scope</h3>
                     <p>
-                        Add the exact cashier flow, product management features, transaction
-                        records, user roles, and other implemented capabilities here.
+                        Expand this section with the exact user roles, screens, workflows,
+                        validation rules, and inventory features implemented in the system.
                     </p>
                 </article>
             </div>
@@ -81,21 +82,22 @@
         <section class="project-detail-section">
             <h2>Implementation details</h2>
             <p>
-                The system is presented as a web-based POS application built with HTML,
-                CSS, and PHP. Add the system flow, interface and database design, transaction
-                handling, and technical decisions here to describe the implementation fully.
+                The application is built as a PHP and MySQL web system with a Bootstrap
+                interface. Add the system architecture, database design, key workflows,
+                implementation decisions, and challenges here to document the full project.
             </p>
         </section>
 
         <section class="project-detail-section">
             <h2>Role and responsibilities</h2>
             <p>
-                Add your specific contributions here, such as the parts of the cashier
-                workflow, interface, or application logic that you designed and implemented.
+                Add your specific contributions here, including the modules you developed,
+                database work, interface implementation, testing, and any collaboration
+                involved in completing the system.
             </p>
         </section>
 
-        <a class="project-detail-link" href="https://github.com/edwindarrenhasannudin/PTI" target="_blank" rel="noopener noreferrer">
+        <a class="project-detail-link" href="https://github.com/edwindarrenhasannudin/Sistem-Informasi-Apotek" target="_blank" rel="noopener noreferrer">
             View project repository
             <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </a>
@@ -107,13 +109,13 @@
         const isLightTheme = savedTheme !== 'dark';
 
         document.body.classList.toggle('light-theme', isLightTheme);
-        themeIcon.src = isLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+        themeIcon.src = isLightTheme ? '../assets/moon.png' : '../assets/sun.png';
         themeToggle.setAttribute('aria-label', `Switch to ${isLightTheme ? 'dark' : 'light'} theme`);
 
         themeToggle.addEventListener('click', () => {
             const useLightTheme = document.body.classList.toggle('light-theme');
             localStorage.setItem('portfolio-theme', useLightTheme ? 'light' : 'dark');
-            themeIcon.src = useLightTheme ? 'assets/moon.png' : 'assets/sun.png';
+            themeIcon.src = useLightTheme ? '../assets/moon.png' : '../assets/sun.png';
             themeToggle.setAttribute('aria-label', `Switch to ${useLightTheme ? 'dark' : 'light'} theme`);
         });
     </script>
