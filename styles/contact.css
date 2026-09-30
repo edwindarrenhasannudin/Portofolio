@@ -52,6 +52,25 @@ button:hover {
   padding: 2rem 9%;
 }
 
+.footer-visits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.6rem 0 0;
+  color: var(--snd-text-color);
+  font-size: 0.9rem;
+}
+
+.footer-visits i {
+  color: var(--main-color);
+}
+
+.footer-visits strong {
+  color: var(--text-color);
+  font-variant-numeric: tabular-nums;
+}
+
 .footer-iconTop {
   display: inline-flex;
   justify-content: center;
