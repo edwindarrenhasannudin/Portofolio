@@ -63,11 +63,8 @@ Portofolio/
 │
 ├── assets/ (unchanged)
 │
-└── Documentation ✨ NEW
-    ├── CSS_REFACTOR_GUIDE.md
-    ├── JS_REFACTOR_GUIDE.md
-    ├── CLEANUP_SUMMARY.md
-    └── QUICK_REFERENCE.md
+└── Documentation
+    └── Markdown documentation files (removed; not used by the website)
 
 ═══════════════════════════════════════════════════════════════
 
@@ -120,27 +117,9 @@ Add Certificate:
 
 ═══════════════════════════════════════════════════════════════
 
-📖 DOCUMENTATION FILES
+📖 DOCUMENTATION
 
-✨ CSS_REFACTOR_GUIDE.md
-   - Penjelasan struktur CSS
-   - Tips maintenance
-   - Best practices
-
-✨ JS_REFACTOR_GUIDE.md
-   - Analisis tiap module
-   - Diagram flow
-   - Debugging tips
-
-✨ CLEANUP_SUMMARY.md
-   - Perbandingan before/after
-   - Quality checklist
-   - Next steps
-
-✨ QUICK_REFERENCE.md
-   - Cheat sheet
-   - Common tasks
-   - Common issues & solutions
+Markdown documentation files have been removed because the website does not use them.
 
 ═══════════════════════════════════════════════════════════════
 
