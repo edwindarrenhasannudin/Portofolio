@@ -6,37 +6,47 @@ Website portofolio pribadi Edwin Darren Hasannudin, Lulusan Teknik Informatika d
 
 ## Teknologi
 
-- HTML, CSS, dan JavaScript tanpa framework atau proses build
-- Komponen halaman HTML dimuat dari folder `components/`
-- Boxicons, Font Awesome, ScrollReveal, dan Typed.js dimuat dari CDN
+- React untuk merender aplikasi dan mengelola lifecycle halaman
+- Vite untuk server pengembangan dan production build
+- Komponen HTML yang ada dipakai sebagai langkah migrasi bertahap ke JSX
+- Boxicons, Font Awesome, dan ScrollReveal dimuat dari CDN
 
 ## Menjalankan secara lokal
 
-Karena halaman memuat komponen menggunakan `fetch()`, jalankan situs melalui server lokal (jangan membuka `index.html` langsung sebagai `file://`).
-
-Dengan Python:
+Perlu Node.js dan npm. Pasang dependency, lalu mulai server:
 
 ```bash
-python -m http.server 8000
+npm install
+npm run dev
 ```
 
-Kemudian buka <http://localhost:8000>.
+Buka URL lokal yang ditampilkan Vite (biasanya <http://localhost:5173>).
+
+## Build untuk produksi
+
+```bash
+npm run build
+npm run preview
+```
+
+Vite menghasilkan situs di `dist/`. Aset, halaman detail proyek, serta stylesheet untuk halaman detail ikut disalin ke hasil build.
 
 ## Struktur proyek
 
 ```text
 .
-├── index.html          # Halaman utama dan pemuat komponen
-├── style.css           # Impor stylesheet situs
-├── styles/             # Gaya global, bagian halaman, dan responsif
-├── components/         # Potongan HTML untuk bagian-bagian halaman
-├── js/                 # Navigasi, animasi, splash screen, dan carousel
-├── projects/           # Halaman detail proyek
+├── index.html          # Dokumen HTML Vite
+├── src/                # Entry React dan komposisi aplikasi
+├── components/         # Konten HTML yang dimigrasikan bertahap
+├── js/                 # Fitur halaman yang digunakan React
+├── styles/             # Stylesheet halaman
+├── projects/           # Halaman detail proyek statis
 ├── assets/             # Gambar, ikon, sertifikat, dan berkas CV
-├── main.js             # Inisialisasi utama
-└── light-theme.js      # Skrip tema tambahan
+├── style.css           # Entry stylesheet utama
+├── vite.config.js      # Konfigurasi Vite dan penyalinan berkas statis
+└── package.json        # Perintah dan dependency
 ```
 
 ## Publikasi
 
-Repositori ini merupakan situs statis. Untuk menerbitkannya dengan GitHub Pages, pilih branch dan folder root repositori pada **Settings → Pages**. Pastikan `index.html` berada di root publikasi.
+Untuk GitHub Pages, deploy isi folder `dist/` (misalnya dengan GitHub Actions). Build memakai path relatif agar bisa berjalan di root domain maupun di subpath seperti `/portfolio/`.

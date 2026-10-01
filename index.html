@@ -27,115 +27,21 @@
         <title>Edwin Darren H - Portfolio | Developer & Designer</title>
         
         <!-- CSS Links -->
-        <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
         <!-- Favicon -->
-        <link rel="icon" href="assets/favicon.ico">
+        <link rel="icon" href="./assets/favicon.ico">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     </head>
 <body class="light-theme">
-    <!-- Components will be loaded here -->
-    <div id="header-placeholder"></div>
-    <div id="splash-placeholder"></div>
-    <div id="home-placeholder"></div>
-    <div id="about-placeholder"></div>
-    <div id="experience-placeholder"></div>
-    <div id="services-placeholder"></div>
-    <div id="portfolio-placeholder"></div>
-    <div id="certificates-placeholder"></div>
-    <div id="contact-placeholder"></div>
-
-    <!-- Scroll Reveal JS -->
+    <div id="root"></div>
     <script
+        defer
         src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"
         integrity="sha384-/Mm/FNRz5xZHO/GuuAUw93l4PLUyI1RfkXnlY65kdR+jBmgt/ih19KrCNqVI9gKS"
         crossorigin="anonymous"></script>
-
-    <!-- Typed JS -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- Component Loader -->
-    <script>
-        // Load HTML components and wait for all to complete
-        function loadComponent(componentPath, placeholderId) {
-            return fetch(componentPath)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById(placeholderId).innerHTML = html;
-                })
-                .catch(error => console.error('Error loading component:', error));
-        }
-
-        // Load all components in parallel and wait for completion
-        Promise.all([
-            loadComponent('components/header.html', 'header-placeholder'),
-            loadComponent('components/splash.html', 'splash-placeholder'),
-            loadComponent('components/home.html', 'home-placeholder'),
-            loadComponent('components/about.html', 'about-placeholder'),
-            loadComponent('components/experience.html', 'experience-placeholder'),
-            loadComponent('components/services.html', 'services-placeholder'),
-            loadComponent('components/portfolio.html', 'portfolio-placeholder'),
-            loadComponent('components/certificates.html', 'certificates-placeholder'),
-            loadComponent('components/contact.html', 'contact-placeholder')
-        ]).then(() => {
-            // All components loaded - trigger custom event for other scripts
-            const componentsLoadedEvent = new Event('componentsLoaded');
-            document.dispatchEvent(componentsLoadedEvent);
-            console.log('✓ All components loaded');
-        }).catch(error => {
-            console.error('Error loading components:', error);
-        });
-    </script>
-
-    <!-- Debug Script (Remove after fixing) -->
-    <script src="js/debug.js"></script>
-
-    <!-- JS Modules (loaded after component loader) -->
-    <script src="js/navbar.js"></script>
-    <script src="js/scroll-navigation.js"></script>
-    <script src="js/scroll-reveal.js"></script>
-    <script src="js/splash-screen.js"></script>
-    <script src="js/certificates.js"></script>
-    <script src="js/projects.js"></script>
-
-    <!-- Light Theme JS (must be after components load) -->
-    <script>
-        // Wait for components to be loaded before initializing light theme
-        document.addEventListener('componentsLoaded', () => {
-            var icon = document.getElementById("icon");
-
-            function updateProjectIconColor() {
-                const projectIcons = document.querySelectorAll('.project-card a i.fa-up-right-from-square');
-                const isLight = document.body.classList.contains('light-theme');
-                projectIcons.forEach(iconEl => {
-                    iconEl.style.color = isLight ? '' : '#FFEA00';
-                });
-            }
-
-            if (icon) {
-                const savedTheme = localStorage.getItem('portfolio-theme');
-                const isLight = savedTheme !== 'dark';
-                document.body.classList.toggle('light-theme', isLight);
-                icon.src = isLight ? 'assets/moon.png' : 'assets/sun.png';
-
-                icon.onclick = function() {
-                    const isLight = document.body.classList.toggle('light-theme');
-                    localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
-                    icon.src = isLight ? 'assets/moon.png' : 'assets/sun.png';
-                    updateProjectIconColor();
-                }
-            } else {
-                console.warn('⚠️ Icon element not found');
-            }
-
-            updateProjectIconColor();
-        });
-    </script>
-
-    <!-- Main JS -->
-    <script src="main.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

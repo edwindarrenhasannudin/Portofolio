@@ -1,5 +1,5 @@
 // ====== SPLASH SCREEN ======
-const SplashScreen = (() => {
+export const SplashScreen = (() => {
   const SPLASH_DURATION = 1500; // milliseconds
 
   const init = () => {

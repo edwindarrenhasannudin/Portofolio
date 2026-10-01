@@ -1,5 +1,5 @@
 // ====== CERTIFICATE WALL ======
-const CertificateWall = (() => {
+export const CertificateWall = (() => {
   const bootcampCertificates = [
     {
       image: 'assets/optimized-certificates/Edwin_Darren_Hasannudin-bootcamp-sertifikasi-microsoft-office-excel-word-power-point-specialist-1.jpg',

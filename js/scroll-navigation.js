@@ -1,5 +1,5 @@
 // ====== SCROLL & ACTIVE NAV LINK ======
-const ScrollNavigation = (() => {
+export const ScrollNavigation = (() => {
   let sections = [];
   let navLinks = [];
   let header = null;

@@ -1,5 +1,5 @@
 // ====== NAVBAR & MENU TOGGLE ======
-const Navbar = (() => {
+export const Navbar = (() => {
   let menuIcon = null;
   let navbar = null;
 

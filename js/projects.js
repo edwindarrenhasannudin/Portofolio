@@ -1,5 +1,5 @@
 // ====== PROJECT CAROUSEL ======
-const ProjectCarousel = (() => {
+export const ProjectCarousel = (() => {
   let projectCards = [];
   let btnProjectLeft = null;
   let btnProjectRight = null;

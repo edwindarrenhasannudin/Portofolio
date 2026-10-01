@@ -1,5 +1,5 @@
 // ====== SCROLL REVEAL ANIMATIONS ======
-const ScrollRevealInit = (() => {
+export const ScrollRevealInit = (() => {
   const init = () => {
     // Check if ScrollReveal library is loaded
     if (typeof ScrollReveal === 'undefined') {
