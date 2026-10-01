@@ -2081,3 +2081,171 @@
     text-align: center;
   }
 }
+
+/* Project cards use a stable grid on tablets and a single column on phones. */
+@media (min-width: 601px) and (max-width: 1200px) {
+  .portfolio {
+    padding: clamp(4rem, 7vw, 5rem) clamp(1.25rem, 5vw, 4rem);
+  }
+
+  .portfolio-heading {
+    margin-bottom: 2rem;
+  }
+
+  .project-widget-carousel {
+    display: block;
+    width: 100%;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .project-track {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card,
+  .project-card.portfolio-item-1 {
+    position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: clamp(1rem, 2.2vw, 1.5rem);
+    overflow: hidden;
+    border-radius: 16px;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    transform: none !important;
+    pointer-events: auto;
+    text-align: left;
+  }
+
+  .project-card img,
+  .project-card.portfolio-item-1 img {
+    display: block;
+    width: 100%;
+    height: clamp(160px, 22vw, 240px);
+    margin: 0 0 0.75rem;
+    border-radius: 10px;
+    background: var(--snd-bf-color);
+    object-fit: contain;
+  }
+
+  .project-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .project-card h3 {
+    padding-top: 0;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    line-height: 1.4;
+  }
+
+  .project-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  .project-card .project-tags {
+    justify-content: flex-start;
+    gap: 0.45rem;
+  }
+
+  .project-card a {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-tags .tag {
+    max-width: 100%;
+    padding: 0.35rem 0.65rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .project-card.portfolio-item-1 .portfolio-info-1 {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card.portfolio-item-1 .portfolio-info-1 h3 {
+    color: var(--main-color);
+  }
+
+  .project-widget-carousel .carousel-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 4rem 5%;
+  }
+
+  .portfolio-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-track {
+    gap: 1rem;
+  }
+
+  .project-card,
+  .project-card.portfolio-item-1 {
+    text-align: left;
+  }
+
+  .project-card .project-tags {
+    justify-content: flex-start;
+  }
+
+  .project-card a {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.project-card:focus-within {
+  outline: 2px solid var(--main-color);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1200px) and (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+}
