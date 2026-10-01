@@ -49,6 +49,15 @@ Vite menghasilkan situs di `dist/`. Aset, halaman detail proyek, serta styleshee
 └── package.json        # Perintah dan dependency
 ```
 
+## Menambahkan deskripsi proyek
+
+Kartu proyek yang dipilih membuka halaman detail bersama di `projects/detail.html`.
+Untuk mengisi deskripsi, edit entri proyek yang sesuai di `projects/project-details.js`.
+Tambahkan properti `background`, `objective`, `features`, `implementation`, dan `role`;
+halaman detail akan menampilkan nilainya. Ganti juga `summary` untuk ringkasan, serta
+`tags`, `image`, atau `repository` bila diperlukan. Untuk proyek baru, tambahkan entri
+dengan slug unik lalu arahkan tautan kartunya ke `projects/detail.html?project=slug-anda`.
+
 ## Publikasi
 
 Untuk GitHub Pages, deploy isi folder `dist/` (misalnya dengan GitHub Actions). Build memakai path relatif agar bisa berjalan di root domain maupun di subpath seperti `/portfolio/`.
