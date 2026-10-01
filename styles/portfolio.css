@@ -83,6 +83,7 @@
   width: 350px;
   height: 480px;
   margin: auto;
+  margin-bottom: 0;  
   background: var(--bg-color, #fff);
   color: var(--text-color, #222);
   border-radius: 18px;
@@ -372,8 +373,8 @@
 }
 
 .portfolio-heading h2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding-top: 0.5rem; 
+  padding-bottom: 1rem;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
 }
@@ -560,6 +561,7 @@
 
 .experience-eyebrow {
   margin: 0 0 0.7rem;
+  margin-top: 1.5rem;
   color: var(--main-color);
   font-size: 0.78rem;
   font-weight: 700;
