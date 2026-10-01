@@ -18,7 +18,7 @@ function copyStaticSiteFiles() {
         });
       }
 
-      cpSync(resolve(root, 'style.css'), resolve(output, 'style.css'));
+      cpSync(resolve(root, 'styles', 'style.css'), resolve(output, 'style.css'));
     },
   };
 }

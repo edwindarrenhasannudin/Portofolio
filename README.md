@@ -42,7 +42,9 @@ Vite menghasilkan situs di `dist/`. Aset, halaman detail proyek, serta styleshee
 ├── styles/             # Stylesheet halaman
 ├── projects/           # Halaman detail proyek statis
 ├── assets/             # Gambar, ikon, sertifikat, dan berkas CV
-├── style.css           # Entry stylesheet utama
+├── styles/
+│   ├── style.css       # Entry stylesheet utama
+│   └── ...             # Stylesheet halaman
 ├── vite.config.js      # Konfigurasi Vite dan penyalinan berkas statis
 └── package.json        # Perintah dan dependency
 ```

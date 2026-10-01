@@ -1,0 +1,14 @@
+/* ====== MAIN CSS IMPORT ====== */
+/* Import semua file CSS yang termodulasi */
+
+@import url('./variables.css');
+@import url('./globals.css');
+@import url('./animations.css');
+@import url('./header.css');
+@import url('./home.css');
+@import url('./about.css');
+@import url('./services.css');
+@import url('./portfolio.css');
+@import url('./certificates.css');
+@import url('./contact.css');
+@import url('./responsive.css');
