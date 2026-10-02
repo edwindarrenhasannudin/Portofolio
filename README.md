@@ -2,7 +2,7 @@
 
 Website portofolio pribadi Edwin Darren Hasannudin, Lulusan Teknik Informatika di Institut Teknologi Sumatera dan pengembang web/UI/UX designer. Situs ini menampilkan profil, pengalaman, layanan, proyek, sertifikat, dan informasi kontak.
 
-**Website:** [edwindarrenhasannudin.github.io/portfolio](https://edwindarrenhasannudin.github.io/portfolio)
+**Website:** [edwindarrenhasannudin.github.io/Portofolio](https://edwindarrenhasannudin.github.io/Portofolio/)
 
 ## Teknologi
 
