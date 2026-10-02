@@ -3,7 +3,7 @@ const organizationExperiences = [
   {
     role: 'Academic & Scholarship Division Staff',
     organization: 'Himpunan Mahasiswa Teknik Informatika (HMIF) ITERA',
-    duration: '[February 2024 - March 2025]',
+    duration: 'February 2024 - March 2025',
     responsibilities: [
       'Led the execution of academic development programs for students within the study program.',
       'Managed operations and logistics for major university-wide events and inauguration programs.',

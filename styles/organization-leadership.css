@@ -17,6 +17,7 @@
 
 .organization-leadership__eyebrow {
   margin: 0 0 0.7rem;
+  padding-top: 20px; 
   color: var(--main-color);
   font-size: 0.78rem;
   font-weight: 700;
@@ -101,6 +102,7 @@
   padding-left: 1.2rem;
   color: var(--snd-text-color);
   line-height: 1.7;
+  text-align: justify;
 }
 
 .organization-leadership__responsibilities li {
