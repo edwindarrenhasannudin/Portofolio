@@ -60,4 +60,6 @@ dengan slug unik lalu arahkan tautan kartunya ke `projects/detail.html?project=s
 
 ## Publikasi
 
-Untuk GitHub Pages, deploy isi folder `dist/` (misalnya dengan GitHub Actions). Build memakai path relatif agar bisa berjalan di root domain maupun di subpath seperti `/portfolio/`.
+GitHub Actions membangun situs dengan `npm run build` dan menerbitkan isi `dist/` ke GitHub Pages setiap ada push ke branch `main`. Pada pengaturan repository, buka **Settings → Pages** dan pilih **GitHub Actions** sebagai build and deployment source. Workflow juga dapat dijalankan manual dari tab **Actions**.
+
+Build memakai path relatif agar bisa berjalan di root domain maupun di subpath repository.
