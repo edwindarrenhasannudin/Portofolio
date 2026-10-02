@@ -1,0 +1,137 @@
+/* ====== ORGANIZATION & LEADERSHIP ====== */
+.organization-leadership {
+  padding: 5rem 10% 6rem;
+  color: var(--text-color);
+  background: var(--fr-bf-color);
+}
+
+.organization-leadership__inner {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+}
+
+.organization-leadership__heading {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.organization-leadership__eyebrow {
+  margin: 0 0 0.7rem;
+  color: var(--main-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.organization-leadership__heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.organization-leadership__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.organization-leadership__item {
+  min-width: 0;
+}
+
+.organization-leadership__card {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+  border-radius: 12px;
+  background: var(--bg-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.organization-leadership__card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--main-color) 48%, transparent);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
+}
+
+.organization-leadership__card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.organization-leadership__card h3 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.organization-leadership__organization {
+  margin: 0.35rem 0 0;
+  color: var(--main-color);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.organization-leadership__duration {
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--main-color) 14%, transparent);
+  color: var(--main-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.organization-leadership__responsibilities {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--snd-text-color);
+  line-height: 1.7;
+}
+
+.organization-leadership__responsibilities li {
+  padding-left: 0.2rem;
+}
+
+@media (max-width: 760px) {
+  .organization-leadership {
+    padding: 4rem 6% 4.5rem;
+  }
+
+  .organization-leadership__heading {
+    margin-bottom: 2.25rem;
+  }
+
+  .organization-leadership__list {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .organization-leadership__card {
+    padding: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .organization-leadership__card {
+    transition: none;
+  }
+
+  .organization-leadership__card:hover {
+    transform: none;
+  }
+}

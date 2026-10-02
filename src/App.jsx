@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import about from '../components/about.html?raw';
 import certificates from '../components/certificates.html?raw';
 import contact from '../components/contact.html?raw';
@@ -8,6 +8,7 @@ import home from '../components/home.html?raw';
 import portfolio from '../components/portfolio.html?raw';
 import services from '../components/services.html?raw';
 import splash from '../components/splash.html?raw';
+import OrganizationLeadership from './components/OrganizationLeadership.jsx';
 import { CertificateWall } from '../js/certificates.js';
 import { Navbar } from '../js/navbar.js';
 import { ProjectCarousel } from '../js/projects.js';
@@ -71,6 +72,9 @@ export default function App() {
   }, []);
 
   return sections.map((markup, index) => (
-    <StaticSection key={index} markup={markup} />
+    <Fragment key={index}>
+      <StaticSection markup={markup} />
+      {markup === experience && <OrganizationLeadership />}
+    </Fragment>
   ));
 }
