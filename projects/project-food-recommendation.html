@@ -27,14 +27,17 @@
                 <p class="project-detail-eyebrow">Bachelor's thesis</p>
                 <h1>Food Ingredient Recommendation System</h1>
                 <p>
-                    A recommendation system that explores food ingredient substitution using
-                    Content-Based Filtering. This project was developed as a bachelor's thesis.
+                    A food ingredient substitution recommendation system developed as a
+                    bachelor's thesis. It combines a React web application with Python-based
+                    nutrition data preprocessing and Content-Based Filtering.
                 </p>
                 <div class="project-detail-tags" aria-label="Technologies and methods">
+                    <span>TypeScript</span>
+                    <span>React 18</span>
+                    <span>Vite 6</span>
+                    <span>Tailwind CSS 4</span>
                     <span>Python</span>
                     <span>Content-Based Filtering</span>
-                    <span>Pandas</span>
-                    <span>Data Analysis</span>
                 </div>
             </div>
         </header>
@@ -61,21 +64,25 @@
                 </article>
 
                 <article class="project-detail-block">
-                    <h3>Approach</h3>
+                    <h3>Technical architecture</h3>
                     <p>
-                        The project applies Content-Based Filtering to the ingredient
-                        recommendation task. Python and Pandas are listed among the tools used
-                        for implementation and data analysis.
+                        The web application is built with TypeScript and React 18, using Vite 6
+                        for development and builds and Tailwind CSS 4 for styling. The
+                        Content-Based Filtering recommendation calculation is also implemented
+                        in TypeScript. No Django, Flask, or FastAPI backend is indicated in the
+                        project structure.
                     </p>
                 </article>
 
                 <article class="project-detail-block">
-                    <h3>Project scope</h3>
+                    <h3>Data processing and dependencies</h3>
                     <p>
-                        The current project summary covers the recommendation method and
-                        ingredient-substitution use case. Dataset details, similarity
-                        attributes, evaluation results, and other thesis findings can be
-                        documented here as the full project description is added.
+                        Python scripts handle nutrition data preprocessing and analysis,
+                        including one-hot encoding and scaling. They use pandas,
+                        scikit-learn, NumPy, Matplotlib, and openpyxl. The thesis
+                        repository's current <code>requirements.txt</code> lists only NumPy
+                        and Matplotlib, so the other imported packages should also be
+                        documented as dependencies.
                     </p>
                 </article>
             </div>
@@ -84,9 +91,11 @@
         <section class="project-detail-section">
             <h2>Tools and methods</h2>
             <p>
-                Python, Pandas, data analysis, and Content-Based Filtering are the tools and
-                methods listed for this project. The exact data preparation steps, recommendation
-                flow, and evaluation methodology can be expanded here with the thesis details.
+                The project combines a React 18 and TypeScript web application (built with Vite 6
+                and styled with Tailwind CSS 4) with Python data-processing scripts. Nutrition
+                preprocessing uses one-hot encoding and scaling, while ingredient alternatives
+                are recommended with Content-Based Filtering. Python analysis uses pandas,
+                scikit-learn, NumPy, Matplotlib, and openpyxl.
             </p>
         </section>
 
