@@ -77,6 +77,10 @@
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
+.project-detail-intro .project-food-title {
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+}
+
 .project-detail-intro > p:not(.project-detail-eyebrow) {
   color: var(--snd-text-color);
   text-align: justify;
